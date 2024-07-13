@@ -1,0 +1,68 @@
+import {
+    NavigationMenu,
+    NavigationMenuContent,
+    NavigationMenuIndicator,
+    NavigationMenuItem,
+    NavigationMenuLink,
+    NavigationMenuList,
+    NavigationMenuTrigger,
+    NavigationMenuViewport,
+  } from "@/components/ui/navigation-menu"
+  import Link from 'next/link';
+  import Image from "next/image";
+  import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu"
+  
+   
+  export default function NavBar() {
+    return (
+      <div className="fixed top-0 w-full bg-white shadow-md z-50 flex justify-between items-center px-6 py-1">
+        <Link href="/">
+
+        <Image src="/images/logo.png" alt="My Logo" width={220} height={220} />
+        </Link>
+
+      <NavigationMenu>
+    <NavigationMenuList>
+      <NavigationMenuItem>
+    <Link href="/docs" legacyBehavior passHref>
+      <NavigationMenuLink className={`${navigationMenuTriggerStyle()} text-md`}>
+        Documentation
+      </NavigationMenuLink>
+    </Link>
+  </NavigationMenuItem>
+  <NavigationMenuItem>
+    <Link href="/docs" legacyBehavior passHref>
+      <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+        Documentation
+      </NavigationMenuLink>
+    </Link>
+  </NavigationMenuItem>
+  <NavigationMenuItem>
+    <Link href="/docs" legacyBehavior passHref>
+      <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+        Documentation
+      </NavigationMenuLink>
+    </Link>
+  </NavigationMenuItem>
+  <NavigationMenuItem>
+    <Link href="/docs" legacyBehavior passHref>
+      <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+        Documentation
+      </NavigationMenuLink>
+    </Link>
+  </NavigationMenuItem>
+  <NavigationMenuItem>
+    <Link href="/docs" legacyBehavior passHref>
+      <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+        Documentation
+      </NavigationMenuLink>
+    </Link>
+  </NavigationMenuItem>
+  
+    </NavigationMenuList>
+  </NavigationMenu>
+  </div>
+  
+    )
+  }
+  
