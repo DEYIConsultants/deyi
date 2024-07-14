@@ -10,7 +10,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-white shadow-md z-50">
+    <footer className="w-full bg-white shadow-none z-50">
       <div className="container mx-auto">
         <Card className="bg-white shadow-none text-midnight-blue text-sm">
           <CardHeader className="text-center">
@@ -20,16 +20,16 @@ export default function Footer() {
             <Link href="/" legacyBehavior passHref>
               <span className="text-midnight-blue cursor-pointer">About</span>
             </Link>
-            <Link href="/expertise" legacyBehavior passHref>
+            <Link href="/" legacyBehavior passHref>
               <span className="text-midnight-blue cursor-pointer">Expertise</span>
             </Link>
-            <Link href="/procedure" legacyBehavior passHref>
+            <Link href="/" legacyBehavior passHref>
               <span className="text-midnight-blue cursor-pointer">Procedure</span>
             </Link>
-            <Link href="/contact" legacyBehavior passHref>
+            <Link href="/" legacyBehavior passHref>
               <span className="text-midnight-blue cursor-pointer">Contact</span>
             </Link>
-            <Link href="/login" legacyBehavior passHref>
+            <Link href="/" legacyBehavior passHref>
               <span className="text-midnight-blue cursor-pointer">Login</span>
             </Link>
           </CardContent>
