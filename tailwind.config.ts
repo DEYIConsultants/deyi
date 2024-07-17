@@ -7,7 +7,7 @@ const config = {
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
-	],
+  ],
   prefix: "",
   theme: {
     container: {
@@ -52,6 +52,7 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        'midnight-blue': 'rgba(25, 25, 112, 1)', // Custom color
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -72,6 +73,10 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+    },
+    fontWeight: {
+      normal: "400",
+      bold: "700",
     },
   },
   plugins: [require("tailwindcss-animate")],
