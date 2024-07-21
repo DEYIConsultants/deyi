@@ -27,17 +27,17 @@ const config = {
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
         background: 'hsl(var(--background))',
-        foreground: 'hsl(var(--foreground))',
+        foreground: 'rgba(204, 207, 211, 1)',
         primary: {
-          DEFAULT: 'hsl(var(--primary))',
-          foreground: 'hsl(var(--primary-foreground))',
+          DEFAULT: 'rgba(25, 25, 112, 1)',
+          foreground: 'rgba(6, 6, 73, 1)',
         },
         secondary: {
-          DEFAULT: 'hsl(var(--secondary))',
+          DEFAULT: 'rgba(204, 207, 211, 1)',
           foreground: 'hsl(var(--secondary-foreground))',
         },
         destructive: {
-          DEFAULT: 'hsl(var(--destructive))',
+          DEFAULT: 'rgba(126, 133, 142, 1)',
           foreground: 'hsl(var(--destructive-foreground))',
         },
         muted: {

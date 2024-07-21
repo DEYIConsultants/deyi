@@ -28,7 +28,7 @@ export default function Home() {
             <Button className='buttonExplore bg-white text-midnight-blue font-base'>
               Explore Our Service
             </Button>
-            <Button className='buttonAppointment bg-midnight-blue text-white font-base'>
+            <Button className='buttonAppointment bg-midnight-blue text-white hover:bg-primary-foreground font-base'>
               Book a Free Consultant
             </Button>
           </div>
