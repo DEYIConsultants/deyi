@@ -8,33 +8,43 @@ import homeImage from '../public/images/homeImage.jpg';
 export default function Home() {
   return (
     <>
-      <NavBar />
-
-      <Image
-        src={homeImage}
-        alt='Home page background image'
-        objectFit='cover'
-        style={{ opacity: 0.3 }}
-      ></Image>
-      <h1 className='overlay-text'>Welcome to DEYI</h1>
+      <div className=''>
+        <Image
+          src={homeImage}
+          alt='Home page background image'
+          objectFit='cover'
+          style={{ opacity: 0.3 }}
+        ></Image>
+        <h1 className='overlay-texth1'>Welcome to DEYI</h1>
+        <h2 className='overlay-texth2'>
+          Devoting Ourself to Ensure Your Project Stand Strong And Secure
+        </h2>
+      </div>
       <style jsx>{`
         .image-container {
-          position: relative;
+          position: absolute;
           width: 100%;
           height: 400px;
         }
-        .overlay-text {
+        .overlay-texth1 {
           position: absolute;
-          top: 50%;
+          top: 45%;
           left: 50%;
           transform: translate(-50%, -50%);
-          color: white;
-          font-size: 36pt;
-          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+          color: rgba(25, 25, 112, 1);
+          font-size: 32pt;
+          font-weight: bold;
+          text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+        }
+        .overlay-texth2 {
+          position: absolute;
+          top: 55%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: rgba(25, 25, 112, 1);
+          font-size: 16pt;
         }
       `}</style>
-
-      <Footer />
     </>
   );
 }
