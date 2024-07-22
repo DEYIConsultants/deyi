@@ -4,6 +4,8 @@ import NavBar from '@/components/public/NavBar';
 import Footer from '@/components/public/Footer';
 import Image from 'next/image';
 import homeImage from '../public/images/homeImage.jpg';
+import PhoneIcon from '@/public/icons/phone1.png';
+import NavigateIcon from '@/public/icons/navigate.png';
 import { Button } from '@/components/ui/button';
 
 export default function Home() {
@@ -26,9 +28,24 @@ export default function Home() {
 
           <div className='mt-20 space-x-8 flex'>
             <Button className='buttonExplore bg-white text-midnight-blue font-base'>
+              <Image
+                src={NavigateIcon}
+                alt='Navigate icon'
+                width={18}
+                height={18}
+                className='mr-2'
+              />
               Explore Our Service
             </Button>
             <Button className='buttonAppointment bg-midnight-blue text-white hover:bg-primary-foreground font-base'>
+              <Image
+                src={PhoneIcon}
+                alt='Phone icon'
+                color='white'
+                width={18}
+                height={18}
+                className='mr-2 filter invert'
+              />
               Book a Free Consultant
             </Button>
           </div>
