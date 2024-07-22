@@ -64,12 +64,12 @@ export default function Home() {
           font-size: 32pt;
           font-weight: bold;
           text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
-          font-family: 'Barlow Semi Condensed', sans-serif;
+          font-family: 'Roboto', sans-serif;
         }
         .overlay-texth2 {
           color: rgba(25, 25, 112, 1);
           font-size: 16pt;
-          font-family: 'Barlow Semi Condensed', sans-serif;
+          font-family: 'Roboto', sans-serif;
         }
         .buttonExplore {
           font-family: 'Barlow Semi Condensed', sans-serif;
