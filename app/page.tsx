@@ -4,7 +4,7 @@ import NavBar from '@/components/public/NavBar';
 import Footer from '@/components/public/Footer';
 import Image from 'next/image';
 import homeImage from '../public/images/homeImage.jpg';
-import PhoneIcon from '@/public/icons/phone1.png';
+import PhoneIcon from '@/public/icons/phone.png';
 import NavigateIcon from '@/public/icons/navigate.png';
 import { Button } from '@/components/ui/button';
 import { useRouter } from 'next/navigation';

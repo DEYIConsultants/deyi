@@ -28,7 +28,7 @@ export default function NavBar() {
       <NavigationMenu>
         <NavigationMenuList className='text-midnight-blue'>
           <NavigationMenuItem>
-            <Link href='/' legacyBehavior passHref>
+            <Link href='/about' legacyBehavior passHref>
               <NavigationMenuLink
                 className={`${navigationMenuTriggerStyle()} font-bold`}
               >
@@ -37,16 +37,16 @@ export default function NavBar() {
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link href='/' legacyBehavior passHref>
+            <Link href='/expertice' legacyBehavior passHref>
               <NavigationMenuLink
                 className={`${navigationMenuTriggerStyle()} font-bold`}
               >
-                EXPERTISE
+                EXPERTICE
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link href='/' legacyBehavior passHref>
+            <Link href='/procedure' legacyBehavior passHref>
               <NavigationMenuLink
                 className={`${navigationMenuTriggerStyle()} font-bold`}
               >
@@ -55,7 +55,7 @@ export default function NavBar() {
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link href='/' legacyBehavior passHref>
+            <Link href='/contact' legacyBehavior passHref>
               <NavigationMenuLink
                 className={`${navigationMenuTriggerStyle()} font-bold`}
               >
