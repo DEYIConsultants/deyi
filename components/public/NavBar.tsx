@@ -16,7 +16,13 @@ export default function NavBar() {
   return (
     <header className='fixed top-0 w-full bg-white shadow-md z-50 flex justify-between items-center px-6 py-1'>
       <Link href='/'>
-        <Image src='/images/logo.png' alt='My Logo' width={220} height={220} />
+        <Image
+          src='/images/logo.png'
+          alt='My Logo'
+          width={220}
+          height={220}
+          className='ml-6'
+        />
       </Link>
 
       <NavigationMenu>
