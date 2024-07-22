@@ -1,7 +1,5 @@
 'use client';
 
-import NavBar from '@/components/public/NavBar';
-import Footer from '@/components/public/Footer';
 import Image from 'next/image';
 import homeImage from '../public/images/homeImage.jpg';
 import PhoneIcon from '@/public/icons/phone.png';
