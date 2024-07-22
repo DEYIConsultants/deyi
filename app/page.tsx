@@ -7,8 +7,11 @@ import homeImage from '../public/images/homeImage.jpg';
 import PhoneIcon from '@/public/icons/phone1.png';
 import NavigateIcon from '@/public/icons/navigate.png';
 import { Button } from '@/components/ui/button';
+import { useRouter } from 'next/navigation';
 
 export default function Home() {
+  const router = useRouter();
+
   return (
     <>
       <div className='relative h-screen'>
@@ -37,7 +40,10 @@ export default function Home() {
               />
               Explore Our Service
             </Button>
-            <Button className='buttonAppointment bg-midnight-blue text-white hover:bg-primary-foreground font-base'>
+            <Button
+              onClick={() => router.push('/appoitment')}
+              className='buttonAppointment bg-midnight-blue text-white hover:bg-primary-foreground font-base'
+            >
               <Image
                 src={PhoneIcon}
                 alt='Phone icon'
