@@ -13,7 +13,7 @@ import {
 const Expertice: React.FC = () => {
   return (
     <div className='h-auto flex flex-col justify-center items-start overflow-hidden p-4 md:p-8'>
-      <div className='flex flex-col items-start mt-16 md:mt-32 mb-10 mx-4 md:mx-14 text-priblue'>
+      <div className='flex flex-col items-start mt-16 md:mt-32 mb-10 mx-4 md:mx-14 text-primary'>
         <h1 className='font-bold text-xl md:text-2xl mb-4 md:mb-6 text-primary'>
           Service Area We Specialize
         </h1>
@@ -37,23 +37,20 @@ const Expertice: React.FC = () => {
       </div>
 
       <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
-        <Card className='h-auto my-4 md:my-8 mx-4 md:mx-14'>
+        <Card className='my-4 md:my-8 mx-4 md:mx-14 relative'>
           <CardActionArea>
-            <CardMedia className='h-48 w-full'>
+            <CardMedia className='h-48 w-full' style={{ position: 'relative' }}>
               <Image
                 src='/images/iStock-104294966.jpg'
                 alt='Expertise'
-                layout='responsive'
-                width={500}
-                height={300}
+                layout='fill' // Use 'fill' to ensure the image covers the area
+                objectFit='cover' // Ensures the image covers the area without distortion
               />
             </CardMedia>
             <CardContent
+              className='flex flex-col bottom-0 left-0 right-0 p-4 bg-opacity-70 bg-gray-500 text-white'
               style={{
-                backgroundColor: '#f0f0f0',
-                padding: '16px',
-                borderRadius: '8px',
-                boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
+                borderRadius: '0 0 8px 8px', // Rounded corners only at the bottom
               }}
             >
               <Typography gutterBottom variant='h5' component='div'>
@@ -61,7 +58,7 @@ const Expertice: React.FC = () => {
               </Typography>
               <Typography
                 variant='body2'
-                color='text.secondary'
+                color='inherit'
                 style={{ maxWidth: '100%', overflowWrap: 'break-word' }}
               >
                 Residential Structural Design services focus on the planning and
@@ -72,7 +69,7 @@ const Expertice: React.FC = () => {
             </CardContent>
           </CardActionArea>
           <CardActions className='flex flex-row'>
-            <Button size='small' className='text-priblue'>
+            <Button size='small' className='text-primary'>
               Detail
             </Button>
             <Button size='small' color='primary'>
@@ -81,30 +78,39 @@ const Expertice: React.FC = () => {
           </CardActions>
         </Card>
 
-        <Card className='h-auto my-4 md:my-8 mx-4 md:mx-14'>
+        <Card className='my-4 md:my-8 mx-4 md:mx-14 relative'>
           <CardActionArea>
-            <CardMedia className='h-48 w-full'>
+            <CardMedia className='h-48 w-full' style={{ position: 'relative' }}>
               <Image
                 src='/images/iStock-104294966.jpg'
                 alt='Expertise'
-                layout='responsive'
-                width={500}
-                height={300}
+                layout='fill' // Use 'fill' to ensure the image covers the area
+                objectFit='cover'
               />
             </CardMedia>
-            <CardContent>
+            <CardContent
+              className='flex flex-col bottom-0 left-0 right-0 p-4 bg-opacity-70 bg-gray-500 text-white'
+              style={{
+                borderRadius: '0 0 8px 8px', // Rounded corners only at the bottom
+              }}
+            >
               <Typography gutterBottom variant='h5' component='div'>
                 Permit Application
               </Typography>
-              <Typography variant='body2' color='text.secondary'>
+              <Typography
+                variant='body2'
+                color='inherit'
+                style={{ maxWidth: '100%', overflowWrap: 'break-word' }}
+              >
                 Permit Application services encompass a crucial aspect of
                 construction and development projects, ensuring compliance with
-                regulatory standards and legal requirements.
+                regulatory standards and legal requirements.ensuring compliance
+                with regulatory standards and legal requirements.
               </Typography>
             </CardContent>
           </CardActionArea>
-          <CardActions>
-            <Button size='small' className='text-priblue'>
+          <CardActions className='flex flex-row'>
+            <Button size='small' className='text-primary'>
               Share
             </Button>
             <Button size='small' color='primary'>
@@ -113,22 +119,30 @@ const Expertice: React.FC = () => {
           </CardActions>
         </Card>
 
-        <Card className='h-auto my-4 md:my-8 mx-4 md:mx-14'>
+        <Card className='my-4 md:my-8 mx-4 md:mx-14 relative'>
           <CardActionArea>
-            <CardMedia className='h-48 w-full'>
+            <CardMedia className='h-48 w-full' style={{ position: 'relative' }}>
               <Image
                 src='/images/iStock-104294966.jpg'
                 alt='Expertise'
-                layout='responsive'
-                width={500}
-                height={300}
+                layout='fill' // Use 'fill' to ensure the image covers the area
+                objectFit='cover'
               />
             </CardMedia>
-            <CardContent>
+            <CardContent
+              className='flex flex-col bottom-0 left-0 right-0 p-4 bg-opacity-70 bg-gray-500 text-white'
+              style={{
+                borderRadius: '0 0 8px 8px', // Rounded corners only at the bottom
+              }}
+            >
               <Typography gutterBottom variant='h5' component='div'>
                 Landscape Detail Structural Design
               </Typography>
-              <Typography variant='body2' color='text.secondary'>
+              <Typography
+                variant='body2'
+                color='inherit'
+                style={{ maxWidth: '100%', overflowWrap: 'break-word' }}
+              >
                 Landscape Detail Structural Design services focus on the
                 planning and engineering aspects of residential buildings,
                 ensuring they are structurally sound, safe, and compliant with
@@ -137,7 +151,7 @@ const Expertice: React.FC = () => {
             </CardContent>
           </CardActionArea>
           <CardActions>
-            <Button size='small' className='text-priblue'>
+            <Button size='small' className='text-primary'>
               Share
             </Button>
             <Button size='small' color='primary'>
@@ -146,31 +160,39 @@ const Expertice: React.FC = () => {
           </CardActions>
         </Card>
 
-        <Card className='h-auto my-4 md:my-8 mx-4 md:mx-14'>
+        <Card className='my-4 md:my-8 mx-4 md:mx-14 relative'>
           <CardActionArea>
-            <CardMedia className='h-48 w-full'>
+            <CardMedia className='h-48 w-full' style={{ position: 'relative' }}>
               <Image
                 src='/images/iStock-104294966.jpg'
                 alt='Expertise'
-                layout='responsive'
-                width={500}
-                height={300}
+                layout='fill' // Use 'fill' to ensure the image covers the area
+                objectFit='cover'
               />
             </CardMedia>
-            <CardContent>
+            <CardContent
+              className='flex flex-col bottom-0 left-0 right-0 p-4 bg-opacity-70 bg-gray-500 text-white'
+              style={{
+                borderRadius: '0 0 8px 8px', // Rounded corners only at the bottom
+              }}
+            >
               <Typography gutterBottom variant='h5' component='div'>
                 Playground Structural Design
               </Typography>
-              <Typography variant='body2' color='text.secondary'>
+              <Typography
+                variant='body2'
+                color='inherit'
+                style={{ maxWidth: '100%', overflowWrap: 'break-word' }}
+              >
                 Playground Structural Design services focus on the planning and
                 engineering aspects of playgrounds, ensuring they are
                 structurally sound, safe, and compliant with building codes and
-                regulations.
+                regulations. ensuring they are structurally sound, safe
               </Typography>
             </CardContent>
           </CardActionArea>
           <CardActions>
-            <Button size='small' className='text-priblue'>
+            <Button size='small' className='text-primary'>
               Share
             </Button>
             <Button size='small' color='primary'>
@@ -179,22 +201,30 @@ const Expertice: React.FC = () => {
           </CardActions>
         </Card>
 
-        <Card className='h-auto mt-4 md:mt-8 mb-16 md:mb-28 mx-4 md:mx-14'>
+        <Card className='my-4 md:my-8 mx-4 md:mx-14 relative'>
           <CardActionArea>
-            <CardMedia className='h-48 w-full'>
+            <CardMedia className='h-48 w-full' style={{ position: 'relative' }}>
               <Image
                 src='/images/iStock-104294966.jpg'
                 alt='Expertise'
-                layout='responsive'
-                width={500}
-                height={300}
+                layout='fill' // Use 'fill' to ensure the image covers the area
+                objectFit='cover'
               />
             </CardMedia>
-            <CardContent>
+            <CardContent
+              className='flex flex-col bottom-0 left-0 right-0 p-4 bg-opacity-70 bg-gray-500 text-white'
+              style={{
+                borderRadius: '0 0 8px 8px', // Rounded corners only at the bottom
+              }}
+            >
               <Typography gutterBottom variant='h5' component='div'>
                 Construction Administration
               </Typography>
-              <Typography variant='body2' color='text.secondary'>
+              <Typography
+                variant='body2'
+                color='inherit'
+                style={{ maxWidth: '100%', overflowWrap: 'break-word' }}
+              >
                 Construction Administration services focus on overseeing
                 construction projects to ensure they are completed on time,
                 within budget, and to the required quality standards.
@@ -202,7 +232,7 @@ const Expertice: React.FC = () => {
             </CardContent>
           </CardActionArea>
           <CardActions>
-            <Button size='small' className='text-priblue'>
+            <Button size='small' className='text-primary'>
               Share
             </Button>
             <Button size='small' color='primary'>
@@ -211,24 +241,28 @@ const Expertice: React.FC = () => {
           </CardActions>
         </Card>
 
-        <Card className='h-auto mt-4 md:mt-8 mb-16 md:mb-28 mx-4 md:mx-14'>
+        <Card className='my-4 md:my-8 mx-4 md:mx-14 relative'>
           <CardActionArea>
-            <CardMedia className='h-48 w-full'>
+            <CardMedia className='h-48 w-full' style={{ position: 'relative' }}>
               <Image
                 src='/images/iStock-104294966.jpg'
                 alt='Expertise'
-                layout='responsive'
-                width={500}
-                height={300}
+                layout='fill' // Use 'fill' to ensure the image covers the area
+                objectFit='cover'
               />
             </CardMedia>
-            <CardContent>
+            <CardContent
+              className='flex flex-col bottom-0 left-0 right-0 p-4 bg-opacity-70 bg-gray-500 text-white'
+              style={{
+                borderRadius: '0 0 8px 8px', // Rounded corners only at the bottom
+              }}
+            >
               <Typography gutterBottom variant='h5' component='div'>
                 Title 24
               </Typography>
               <Typography
                 variant='body2'
-                color='text.secondary'
+                color='inherit'
                 style={{ maxWidth: '100%', overflowWrap: 'break-word' }}
               >
                 Title 24 services focus on energy efficiency and environmental
@@ -238,7 +272,7 @@ const Expertice: React.FC = () => {
             </CardContent>
           </CardActionArea>
           <CardActions className='flex flex-row'>
-            <Button size='small' className='text-priblue'>
+            <Button size='small' color='primary'>
               Share
             </Button>
             <Button size='small' color='primary'>
