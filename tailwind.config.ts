@@ -22,6 +22,13 @@ const config = {
       fontFamily: {
         display: ['"Barlow Semi Condensed"', 'sans-serif'],
       },
+      screens: {
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
+        '2xl': '1536px',
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
