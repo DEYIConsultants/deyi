@@ -37,7 +37,7 @@ const Expertice: React.FC = () => {
       </div>
 
       <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
-        <Card className='my-4 md:my-8 mx-4 md:mx-14 relative'>
+        <Card className='my-4 md:my-8 lg:my-8 mx-8 md:mx-4 lg:mx-8 relative'>
           <CardActionArea>
             <CardMedia className='h-48 w-full' style={{ position: 'relative' }}>
               <Image
@@ -78,7 +78,7 @@ const Expertice: React.FC = () => {
           </CardActions>
         </Card>
 
-        <Card className='my-4 md:my-8 mx-4 md:mx-14 relative'>
+        <Card className='my-4 md:my-8 lg:my-8 mx-8 md:mx-4 lg:mx-8 relative'>
           <CardActionArea>
             <CardMedia className='h-48 w-full' style={{ position: 'relative' }}>
               <Image
@@ -119,7 +119,7 @@ const Expertice: React.FC = () => {
           </CardActions>
         </Card>
 
-        <Card className='my-4 md:my-8 mx-4 md:mx-14 relative'>
+        <Card className='my-4 md:my-8 lg:my-8 mx-8 md:mx-4 lg:mx-8 relative'>
           <CardActionArea>
             <CardMedia className='h-48 w-full' style={{ position: 'relative' }}>
               <Image
@@ -160,7 +160,7 @@ const Expertice: React.FC = () => {
           </CardActions>
         </Card>
 
-        <Card className='my-4 md:my-8 mx-4 md:mx-14 relative'>
+        <Card className='my-4 md:my-8 lg:my-8 mx-8 md:mx-4 lg:mx-8 relative'>
           <CardActionArea>
             <CardMedia className='h-48 w-full' style={{ position: 'relative' }}>
               <Image
@@ -201,7 +201,7 @@ const Expertice: React.FC = () => {
           </CardActions>
         </Card>
 
-        <Card className='my-4 md:my-8 mx-4 md:mx-14 relative'>
+        <Card className='my-4 md:my-8 lg:my-8 mx-8 md:mx-4 lg:mx-8 relative'>
           <CardActionArea>
             <CardMedia className='h-48 w-full' style={{ position: 'relative' }}>
               <Image
@@ -241,7 +241,7 @@ const Expertice: React.FC = () => {
           </CardActions>
         </Card>
 
-        <Card className='my-4 md:my-8 mx-4 md:mx-14 relative'>
+        <Card className='my-4 md:my-8 lg:my-8 mx-8 md:mx-4 lg:mx-8 relative'>
           <CardActionArea>
             <CardMedia className='h-48 w-full' style={{ position: 'relative' }}>
               <Image
