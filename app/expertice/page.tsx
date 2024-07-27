@@ -1,5 +1,8 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 import {
   Button,
   Card,
@@ -11,6 +14,7 @@ import {
 } from '@mui/material';
 
 const Expertice: React.FC = () => {
+  const router = useRouter();
   return (
     <div className='h-auto flex flex-col justify-center items-start overflow-hidden p-4 md:p-8'>
       <div className='flex flex-col items-start mt-16 md:mt-32 mb-10 mx-4 md:mx-14 text-primary'>
@@ -18,9 +22,32 @@ const Expertice: React.FC = () => {
           Service Area We Specialize
         </h1>
         <h2 className='text-base md:text-lg text-destructive'>
-          At DEYI, we specialize in six core areas of expertise to meet all your
-          construction and development needs. Our services include residential
-          Structural Design, ensuring your homes are not just beautiful but also
+          At DEYI Consultants, our extensive experience and dedication to
+          excellence set us apart in the structural design industry. With a
+          proven track record of delivering projects that meet and exceed city
+          codes and regulations, we ensure that your construction and
+          development needs are met with precision and reliability. We
+          specialize in six core areas of expertise: Residential/Commercial
+          Structural Design, Permit Application services, Landscape Detail
+          Structural Design, Playground Structural Design, Construction
+          Administration, and Title 24 compliance. Each of these services is
+          tailored to ensure that your projects are not only aesthetically
+          pleasing but also structurally sound and safe. Our team excels in
+          navigating the complex regulatory landscape to obtain necessary
+          approvals seamlessly. Whether it’s creating innovative and sustainable
+          outdoor spaces or ensuring energy efficiency and environmental
+          sustainability, we are committed to aligning your projects with the
+          latest standards. At DEYI Consultants, we pride ourselves on our
+          professional approach and our ability to handle all structural design
+          projects, even those not listed on our website. Partner with us for
+          unparalleled expertise and a steadfast commitment to delivering
+          quality and compliance in every project we undertake.
+          {/* At DEYI, we specialize in six core areas of expertise but also open
+          for all structural design to meet all your construction and
+          development needs. 
+          
+          Our services include Residential/Commercial
+          Structural Design, ensuring your projects are not just beautiful but also
           structurally sound and safe. We excel in Permit Application services,
           navigating the complex regulatory landscape to obtain the necessary
           approvals for your projects seamlessly. Our Landscape Detail
@@ -32,7 +59,7 @@ const Expertice: React.FC = () => {
           our Title 24 services focus on energy efficiency and environmental
           sustainability, aligning your projects with the latest standards.
           Partner with DEYI Consultants for unparalleled expertise and a
-          commitment to excellence in every project we undertake.
+          commitment to excellence in every project we undertake. */}
         </h2>
       </div>
 
@@ -69,10 +96,14 @@ const Expertice: React.FC = () => {
             </CardContent>
           </CardActionArea>
           <CardActions className='flex flex-row'>
-            <Button size='small' className='text-primary'>
+            {/* <Button size='small' className='text-primary'>
               Detail
-            </Button>
-            <Button size='small' color='primary'>
+            </Button> */}
+            <Button
+              onClick={() => router.push('/expertice/structuraldesign')}
+              size='small'
+              color='primary'
+            >
               Learn More
             </Button>
           </CardActions>
@@ -104,15 +135,11 @@ const Expertice: React.FC = () => {
               >
                 Permit Application services encompass a crucial aspect of
                 construction and development projects, ensuring compliance with
-                regulatory standards and legal requirements.ensuring compliance
-                with regulatory standards and legal requirements.
+                regulatory standards and legal requirements.
               </Typography>
             </CardContent>
           </CardActionArea>
           <CardActions className='flex flex-row'>
-            <Button size='small' className='text-primary'>
-              Share
-            </Button>
             <Button size='small' color='primary'>
               Learn More
             </Button>
@@ -151,9 +178,6 @@ const Expertice: React.FC = () => {
             </CardContent>
           </CardActionArea>
           <CardActions>
-            <Button size='small' className='text-primary'>
-              Share
-            </Button>
             <Button size='small' color='primary'>
               Learn More
             </Button>
@@ -192,9 +216,6 @@ const Expertice: React.FC = () => {
             </CardContent>
           </CardActionArea>
           <CardActions>
-            <Button size='small' className='text-primary'>
-              Share
-            </Button>
             <Button size='small' color='primary'>
               Learn More
             </Button>
@@ -232,9 +253,6 @@ const Expertice: React.FC = () => {
             </CardContent>
           </CardActionArea>
           <CardActions>
-            <Button size='small' className='text-primary'>
-              Share
-            </Button>
             <Button size='small' color='primary'>
               Learn More
             </Button>
@@ -272,9 +290,6 @@ const Expertice: React.FC = () => {
             </CardContent>
           </CardActionArea>
           <CardActions className='flex flex-row'>
-            <Button size='small' color='primary'>
-              Share
-            </Button>
             <Button size='small' color='primary'>
               Learn More
             </Button>
