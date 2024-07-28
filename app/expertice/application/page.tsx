@@ -52,7 +52,7 @@ const Application = () => {
         to finish.
       </h2>
 
-      <div className='flex flex-col items-center justify-center p-6 bg-gray-200'>
+      <div className='flex flex-col items-center justify-center p-14 bg-gray-200'>
         <h3 className='text-sm font-sans md:text-sm font-semibold text-center text-primary mb-4'>
           Team up with our experts in ADU permit applications to create
           comprehensive, compliant plans and designs tailored to your specific
