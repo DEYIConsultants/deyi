@@ -13,7 +13,7 @@ const structuraldesign = () => {
       </h2>
       <div className='md:mt-4 mb-10 mx-4 md:mx-14 text-destructive'>
         <h1 className='w-full p-1 indent-4 bg-primary text-lg text-white my-4 mt-8'>
-          Residential Structural
+          Residential Structural Design
         </h1>
         <div className='flex flex-col md:flex-row'>
           <div className='flex flex-col md:w-2/3'>
@@ -63,7 +63,7 @@ const structuraldesign = () => {
       </div>
       <div className='md:mt-4 mb-10 mx-4 md:mx-14 text-destructive'>
         <h1 className='w-full p-1 indent-4 bg-primary text-lg text-white my-4'>
-          Commercial Structural
+          Commercial Structural Design
         </h1>
         <div className='flex flex-col md:flex-row'>
           <div className='flex flex-col md:w-2/3'>

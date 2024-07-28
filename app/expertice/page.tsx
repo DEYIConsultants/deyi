@@ -65,7 +65,7 @@ const Expertice: React.FC = () => {
 
       <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
         <Card
-          onClick={() => router.push('/expertice/structuraldesign')}
+          onClick={() => router.push('/expertice/design')}
           className='my-4 md:my-8 lg:my-8 mx-8 md:mx-4 lg:mx-8 relative'
         >
           <CardActionArea>
@@ -109,7 +109,7 @@ const Expertice: React.FC = () => {
         </Card>
 
         <Card
-          onClick={() => router.push('/expertice/permitapplication')}
+          onClick={() => router.push('/expertice/application')}
           className='my-4 md:my-8 lg:my-8 mx-8 md:mx-4 lg:mx-8 relative'
         >
           <CardActionArea>
