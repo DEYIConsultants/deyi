@@ -1,7 +1,11 @@
+'use client';
+
 import Image from 'next/image';
 import aboutPic from '@/public/images/aboutpic.jpg';
+import { useRouter } from 'next/navigation';
 
 const structuraldesign = () => {
+  const router = useRouter();
   return (
     <div className='h-auto flex flex-col justify-center items-start overflow-hidden p-4 md:p-8'>
       <h2 className='flex flex-col items-start mt-16 md:mt-32 mb-6 mx-4 md:mx-14 text-destructive'>
@@ -111,14 +115,27 @@ const structuraldesign = () => {
             />
           </div>
         </div>
+        <h2 className='flex flex-col items-start mt-4 md:mt-8 mb-6 mx-4 md:mx-14 text-destructive'>
+          At DEYI Consultants, we pride ourselves on our commitment to
+          excellence and our ability to handle projects of any size and
+          complexity. Whether you're building a new home or developing a
+          commercial property, our team of experienced professionals is here to
+          provide the highest level of structural design services.
+        </h2>
+        <div className='flex flex-col items-center justify-center p-6 mt-20  bg-gray-200'>
+          <h3 className='text-sm font-sans md:text-sm font-semibold text-center text-primary mb-4'>
+            Team up with our experts in ADU permit applications to create
+            comprehensive, compliant plans and designs tailored to your specific
+            needs and city requirements.
+          </h3>
+          <button
+            onClick={() => router.push('/contact')}
+            className='px-6 py-3 bg-primary text-white font-bold rounded-md hover:bg-primary-dark transition duration-300'
+          >
+            CONTACT US
+          </button>
+        </div>
       </div>
-      <h2 className='flex flex-col items-start mt-4 md:mt-8 mb-6 mx-4 md:mx-14 text-destructive'>
-        At DEYI Consultants, we pride ourselves on our commitment to excellence
-        and our ability to handle projects of any size and complexity. Whether
-        you're building a new home or developing a commercial property, our team
-        of experienced professionals is here to provide the highest level of
-        structural design services.
-      </h2>
     </div>
   );
 };
