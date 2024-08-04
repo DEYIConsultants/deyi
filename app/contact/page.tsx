@@ -5,6 +5,7 @@ import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@/componen
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+import Info from "./info/page"
 
 
 export default function Contact() {
@@ -40,11 +41,14 @@ export default function Contact() {
   };
 
   return (
-    <div className=''>
-    <div className="container mx-auto p-6 mt-16">
-      <Card>
+    <div className="container mx-auto pb-4 mt-16 flex h-screen font-sans">
+      <div className="w-1/2 h-full"> {/* Adjust width as needed */}
+        <Info /> {/* Add the new Info component */}
+      </div>
+    <div className="w-1/2 flex items-center">
+      <Card className='w-full shadow-none'>
         <CardHeader>
-          <CardTitle>Let's Keep in Touch</CardTitle>
+          <CardTitle></CardTitle>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleSubmit} className="space-y-4">
@@ -89,7 +93,7 @@ export default function Contact() {
                 rows={4}
               />
             </div>
-            <Button type="submit" disabled={isSubmitting}>
+            <Button className="text-secondary" type="submit" disabled={isSubmitting}>
               {isSubmitting ? 'Sending...' : 'Send'}
             </Button>
           </form>
