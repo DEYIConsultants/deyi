@@ -40,7 +40,8 @@ export default function Contact() {
   };
 
   return (
-    <div className="container mx-auto p-4">
+    <div className=''>
+    <div className="container mx-auto p-6 mt-16">
       <Card>
         <CardHeader>
           <CardTitle>Let's Keep in Touch</CardTitle>
@@ -99,6 +100,7 @@ export default function Contact() {
           </CardFooter>
         )}
       </Card>
+    </div>
     </div>
   );
 }
