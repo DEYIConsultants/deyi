@@ -189,7 +189,10 @@ const Expertice: React.FC = () => {
           </CardActions>
         </Card>
 
-        <Card className='my-4 md:my-8 lg:my-8 mx-8 md:mx-4 lg:mx-8 relative'>
+        <Card
+          onClick={() => router.push('/expertice/playground')}
+          className='my-4 md:my-8 lg:my-8 mx-8 md:mx-4 lg:mx-8 relative'
+        >
           <CardActionArea>
             <CardMedia className='h-48 w-full' style={{ position: 'relative' }}>
               <Image
