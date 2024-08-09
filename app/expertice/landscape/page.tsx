@@ -9,12 +9,12 @@ const Landscape = () => {
   return (
     <div className='flex flex-col'>
       <div className='h-screen flex flex-row'>
-        <div className='w-1/3 bg-primary text-white flex items-center justify-center'>
+        <div className='w-1/3 bg-primary text-white flex items-center justify-center mt-16'>
           <h1 className='text-4xl font-bold p-4 text-center'>
             Landscape Structural Design
           </h1>
         </div>
-        <div className='w-2/3 flex flex-col items-center justify-center p-8'>
+        <div className='w-2/3 flex flex-col items-center justify-center p-8 mt-16'>
           <div className='w-full'>
             <Image
               src={aboutPic}
@@ -25,7 +25,7 @@ const Landscape = () => {
               className='w-full border-2 border-zinc-400 rounded-lg shadow-lg'
             />
           </div>
-          <div className='mt-8 text-justify'>
+          <div className='mt-8 mb-8 text-justify'>
             <h2 className='text-base leading-relaxed text-destructive'>
               We offer comprehensive landscape structural design services that
               transform your outdoor spaces into stunning, functional
