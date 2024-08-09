@@ -37,11 +37,11 @@ export default function NavBar() {
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link href='/expertice' legacyBehavior passHref>
+            <Link href='/expertise' legacyBehavior passHref>
               <NavigationMenuLink
                 className={`${navigationMenuTriggerStyle()} font-bold`}
               >
-                EXPERTICE
+                EXPERTISE
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>

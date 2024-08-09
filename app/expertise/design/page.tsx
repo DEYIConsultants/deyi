@@ -4,7 +4,7 @@ import Image from 'next/image';
 import aboutPic from '@/public/images/aboutpic.jpg';
 import { useRouter } from 'next/navigation';
 
-const structuraldesign = () => {
+const Structuraldesign = () => {
   const router = useRouter();
   return (
     <div className='h-auto flex flex-col justify-center items-start overflow-hidden p-4 md:p-8'>
@@ -16,7 +16,7 @@ const structuraldesign = () => {
         with all relevant building codes and regulations.
       </h2>
       <div className='md:mt-4 mb-10 mx-4 md:mx-14 text-destructive'>
-        <h1 className='w-full p-1 indent-4 bg-primary text-lg text-white my-4 mt-8'>
+        <h1 className='w-full p-1 indent-4 bg-primary text-white text-2xl my-4 mt-8'>
           Residential Structural Design
         </h1>
         <div className='flex flex-col md:flex-row'>
@@ -66,7 +66,7 @@ const structuraldesign = () => {
         </div>
       </div>
       <div className='md:mt-4 mb-10 mx-4 md:mx-14 text-destructive'>
-        <h1 className='w-full p-1 indent-4 bg-primary text-lg text-white my-4'>
+        <h1 className='w-full p-1 indent-4 bg-primary text-white my-4 text-2xl'>
           Commercial Structural Design
         </h1>
         <div className='flex flex-col md:flex-row'>
@@ -118,7 +118,7 @@ const structuraldesign = () => {
         <h2 className='flex flex-col items-start mt-4 md:mt-8 mb-6 text-destructive'>
           At DEYI Consultants, we pride ourselves on our commitment to
           excellence and our ability to handle projects of any size and
-          complexity. Whether you're building a new home or developing a
+          complexity. Whether you are building a new home or developing a
           commercial property, our team of experienced professionals is here to
           provide the highest level of structural design services.
         </h2>
@@ -140,4 +140,4 @@ const structuraldesign = () => {
   );
 };
 
-export default structuraldesign;
+export default Structuraldesign;

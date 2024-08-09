@@ -22,7 +22,7 @@ const Playground = () => {
           </div>
         </div>
         <div className='w-full md:w-1/2 flex flex-col items-center justify-center p-4 ml-8'>
-          <h1 className='font-bold text-3xl text-primary'>
+          <h1 className='font-bold text-4xl text-primary'>
             Playground Structural Design
           </h1>
           <h2 className='text-destructive my-4 text-center'>
@@ -43,16 +43,16 @@ const Playground = () => {
         documentation, you have the option to enhance the package with our
         professional design service. This optional add-on allows you to create a
         vibrant, engaging, and accessible playground tailored to the specific
-        needs of your community or organization. Whether you're looking to build
-        a small neighborhood play area or a large-scale recreational park, our
-        expert designers work closely with you to ensure the design aligns with
-        your vision and meets all regulatory standards. By choosing our service,
-        you benefit from expert guidance throughout the design and approval
-        process, meticulous attention to detail in safety and structural
-        documentation, and the flexibility to include additional design support.
-        This ensures a seamless and customized solution from start to finish,
-        providing a safe and enjoyable play environment for children of all
-        ages.
+        needs of your community or organization. Whether you are looking to
+        build a small neighborhood play area or a large-scale recreational park,
+        our expert designers work closely with you to ensure the design aligns
+        with your vision and meets all regulatory standards. By choosing our
+        service, you benefit from expert guidance throughout the design and
+        approval process, meticulous attention to detail in safety and
+        structural documentation, and the flexibility to include additional
+        design support. This ensures a seamless and customized solution from
+        start to finish, providing a safe and enjoyable play environment for
+        children of all ages.
       </h2>
 
       <div className='flex flex-col items-center justify-center p-14 bg-gray-200'>

@@ -13,7 +13,7 @@ import {
   Typography,
 } from '@mui/material';
 
-const Expertice: React.FC = () => {
+const Expertise: React.FC = () => {
   const router = useRouter();
   return (
     <div className='h-auto flex flex-col justify-center items-start overflow-hidden p-4 md:p-8'>
@@ -42,30 +42,12 @@ const Expertice: React.FC = () => {
           projects, even those not listed on our website. Partner with us for
           unparalleled expertise and a steadfast commitment to delivering
           quality and compliance in every project we undertake.
-          {/* At DEYI, we specialize in six core areas of expertise but also open
-          for all structural design to meet all your construction and
-          development needs. 
-          
-          Our services include Residential/Commercial
-          Structural Design, ensuring your projects are not just beautiful but also
-          structurally sound and safe. We excel in Permit Application services,
-          navigating the complex regulatory landscape to obtain the necessary
-          approvals for your projects seamlessly. Our Landscape Detail
-          Structural Design brings outdoor spaces to life with innovative and
-          sustainable solutions. For playgrounds that inspire creativity and
-          safety, our Playground Structural Design services are second to none.
-          We offer expert Construction Administration, overseeing every aspect
-          of your project to ensure timely completion and compliance. Finally,
-          our Title 24 services focus on energy efficiency and environmental
-          sustainability, aligning your projects with the latest standards.
-          Partner with DEYI Consultants for unparalleled expertise and a
-          commitment to excellence in every project we undertake. */}
         </h2>
       </div>
 
       <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
         <Card
-          onClick={() => router.push('/expertice/design')}
+          onClick={() => router.push('/expertise/design')}
           className='my-4 md:my-8 lg:my-8 mx-8 md:mx-4 lg:mx-8 relative'
         >
           <CardActionArea>
@@ -109,7 +91,7 @@ const Expertice: React.FC = () => {
         </Card>
 
         <Card
-          onClick={() => router.push('/expertice/application')}
+          onClick={() => router.push('/expertise/application')}
           className='my-4 md:my-8 lg:my-8 mx-8 md:mx-4 lg:mx-8 relative'
         >
           <CardActionArea>
@@ -149,7 +131,7 @@ const Expertice: React.FC = () => {
         </Card>
 
         <Card
-          onClick={() => router.push('/expertice/landscape')}
+          onClick={() => router.push('/expertise/landscape')}
           className='my-4 md:my-8 lg:my-8 mx-8 md:mx-4 lg:mx-8 relative'
         >
           <CardActionArea>
@@ -190,7 +172,7 @@ const Expertice: React.FC = () => {
         </Card>
 
         <Card
-          onClick={() => router.push('/expertice/playground')}
+          onClick={() => router.push('/expertise/playground')}
           className='my-4 md:my-8 lg:my-8 mx-8 md:mx-4 lg:mx-8 relative'
         >
           <CardActionArea>
@@ -231,7 +213,7 @@ const Expertice: React.FC = () => {
         </Card>
 
         <Card
-          onClick={() => router.push('/expertice/administration')}
+          onClick={() => router.push('/expertise/administration')}
           className='my-4 md:my-8 lg:my-8 mx-8 md:mx-4 lg:mx-8 relative'
         >
           <CardActionArea>
@@ -271,7 +253,7 @@ const Expertice: React.FC = () => {
         </Card>
 
         <Card
-          onClick={() => router.push('/expertice/title24')}
+          onClick={() => router.push('/expertise/title24')}
           className='my-4 md:my-8 lg:my-8 mx-8 md:mx-4 lg:mx-8 relative'
         >
           <CardActionArea>
@@ -314,4 +296,4 @@ const Expertice: React.FC = () => {
   );
 };
 
-export default Expertice;
+export default Expertise;

@@ -11,18 +11,18 @@ const Title = () => {
       <div className='w-full flex flex-row md:flex-row h-auto mt-16 bottom-6'>
         <div className='w-full flex flex-col'>
           <div className='w-full flex flex-col items-center justify-center p-4'>
-            <h1 className='font-bold text-3xl text-primary mt-24'>Title 24</h1>
+            <h1 className='font-bold text-4xl text-primary mt-24'>Title 24</h1>
             <h2 className='text-destructive mx-14 my-14'>
               We provide a comprehensive Title 24 compliance service that
               includes all necessary calculations, reports, and documentation to
-              meet California's energy efficiency standards. Our package ensures
-              a smooth and efficient approval process, minimizing delays and
-              reducing the stress associated with energy code compliance. In
+              meet California&apos;s energy efficiency standards. Our package
+              ensures a smooth and efficient approval process, minimizing delays
+              and reducing the stress associated with energy code compliance. In
               addition to the essential documentation, you have the option to
               enhance the package with our professional energy consulting
               service. This optional add-on allows you to optimize your
-              building's energy performance, whether you are constructing a new
-              building, renovating an existing one, or aiming to reduce
+              building&apos;s energy performance, whether you are constructing a
+              new building, renovating an existing one, or aiming to reduce
               operational costs. Our expert consultants work closely with you to
               ensure that your project not only meets Title 24 requirements but
               also aligns with your sustainability goals. By choosing our
@@ -73,7 +73,7 @@ const Title = () => {
         <h3 className='text-sm font-sans md:text-sm font-semibold text-center text-primary mb-4'>
           Team up with our experts in Title 24 compliance to create
           comprehensive, energy-efficient plans and documentation tailored to
-          your specific project needs and California's stringent energy
+          your specific project needs and California&apos;s stringent energy
           standards.
         </h3>
         <button
