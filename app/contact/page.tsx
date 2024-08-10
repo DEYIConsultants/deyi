@@ -55,7 +55,7 @@ export default function Contact() {
   };
 
   return (
-    <div className='relative container mx-auto flex flex-col lg:flex-row justify-center items-center h-screen w-full'>
+    <div className='relative flex flex-col lg:flex-row justify-center items-center min-h-screen w-full'>
       {/* Background Image */}
       <div className='absolute inset-0 z-0'>
         <Image
@@ -68,16 +68,16 @@ export default function Contact() {
       </div>
 
       {/* Cards Container */}
-      <div className='flex flex-col lg:flex-row lg:space-x-8 w-full lg:max-w-4xl z-10 h-auto'>
+      <div className='flex flex-col lg:flex-row lg:space-x-8 w-full lg:max-w-6xl z-10 h-auto mx-auto p-4 lg:p-8'>
         {/* Contact Info Card */}
-        <div className='lg:w-1/2 w-full h-full flex'>
-          <Card className='bg-primary text-white p-8 flex-grow'>
+        <div className='lg:w-1/2 w-full flex mx-auto'>
+          <Card className='bg-primary text-white p-6 flex-grow min-h-[350px] flex flex-col justify-between'>
             <CardHeader>
               <CardTitle>Let's Keep In Touch</CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className='flex-grow'>
               <div className='space-y-2'>
-                <h2 className='text-base font-semibold'>Irvine Office</h2>
+                <h2 className='text-base font-semibold mt-4'>Irvine Office</h2>
                 <p>3943 Irvine Blvd #765</p>
                 <p>Irvine, CA 92602</p>
                 <p>Tel: (949) 656 - 6134</p>
@@ -90,18 +90,24 @@ export default function Contact() {
                     info@deyiconsultants
                   </a>
                 </p>
+                <br />
+                <p className='py-8'>
+                  We invite you to contact us with questions, for more
+                  information or for a Request for Proposal. We look forward to
+                  assisting you.
+                </p>
               </div>
             </CardContent>
           </Card>
         </div>
 
         {/* Contact Form Card */}
-        <div className='lg:w-1/2 w-full h-full flex mt-8 lg:mt-0'>
-          <Card className='p-6 flex-grow'>
+        <div className='lg:w-1/2 w-full flex mt-8 lg:mt-0 mx-auto'>
+          <Card className='p-6 flex-grow min-h-[350px] flex flex-col justify-between'>
             <CardHeader>
               <CardTitle className='text-primary'>Contact Us</CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className='flex-grow'>
               <form onSubmit={handleSubmit} className='space-y-4'>
                 <>
                   <label
