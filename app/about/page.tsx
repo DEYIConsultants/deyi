@@ -7,7 +7,7 @@ export default function About() {
     <>
       <div className='h-1/2 mt-16 bg-primary p-5 flex flex-row items-center justify-end'>
         <div className='flex flex-col items-end'>
-          <h1 className='mr-6 mb-4 text-xl font-bold text-right text-white'>
+          <h1 className='mr-6 mb-4 text-3xl font-bold text-right text-white'>
             ABOUT DEYI
           </h1>
           <h2 className='mr-6 text-base font-sans text-right text-secondary'>
@@ -62,32 +62,36 @@ export default function About() {
             also environmentally responsible and socially beneficial.
           </h3>
           <h3 className='my-4 font-base'>
-            <span className='font-bold underline'>Innovation</span> is at the
-            heart of what we do. We continuously explore new materials,
-            technologies, and methodologies to bring fresh ideas to life and
-            solve complex engineering challenges. This forward-thinking approach
-            allows us to deliver cutting-edge solutions that are both efficient
-            and effective.
+            <span className='font-bold underline text-primary'>Innovation</span>{' '}
+            is at the heart of what we do. We continuously explore new
+            materials, technologies, and methodologies to bring fresh ideas to
+            life and solve complex engineering challenges. This forward-thinking
+            approach allows us to deliver cutting-edge solutions that are both
+            efficient and effective.
           </h3>
           <h3 className='my-4 font-base'>
-            <span className='font-bold underline'>Sustainability</span> is a
-            core value that guides our work. We are dedicated to reducing the
-            environmental impact of our projects through eco-friendly practices
-            and sustainable design principles. From energy-efficient buildings
-            to green construction techniques, we strive to create structures
-            that harmonize with the natural environment.
+            <span className='font-bold underline text-primary'>
+              Sustainability
+            </span>{' '}
+            is a core value that guides our work. We are dedicated to reducing
+            the environmental impact of our projects through eco-friendly
+            practices and sustainable design principles. From energy-efficient
+            buildings to green construction techniques, we strive to create
+            structures that harmonize with the natural environment.
           </h3>
           <h3 className='my-4 font-base'>
-            <span className='font-bold underline'>Excellence</span> is our
-            standard. We are committed to delivering the highest quality in
-            every aspect of our work, from initial design to final construction.
-            Our meticulous attention to detail, rigorous quality control
-            processes, and relentless pursuit of perfection ensure that our
-            clients receive the best possible outcomes.
+            <span className='font-bold underline text-primary'>Excellence</span>{' '}
+            is our standard. We are committed to delivering the highest quality
+            in every aspect of our work, from initial design to final
+            construction. Our meticulous attention to detail, rigorous quality
+            control processes, and relentless pursuit of perfection ensure that
+            our clients receive the best possible outcomes.
           </h3>
           <h3 className='my-4 font-base'>
-            <span className='font-bold underline'>Client satisfaction</span> is
-            our top priority. We build strong relationships with our clients
+            <span className='font-bold underline text-primary'>
+              Client satisfaction
+            </span>{' '}
+            is our top priority. We build strong relationships with our clients
             based on trust, transparency, and mutual respect. By listening to
             their needs and understanding their vision, we are able to tailor
             our services to meet their specific requirements and exceed their
@@ -95,8 +99,8 @@ export default function About() {
           </h3>
           <h3 className='my-4 font-base'>
             At DEYI Consultants, we are passionate about creating spaces that
-            make a positive difference in people’s lives. Whether it’s a
-            residential building, commercial development, or public
+            make a positive difference in people&apos;s lives. Whether it&apos;s
+            a residential building, commercial development, or public
             infrastructure project, we are dedicated to making the world a
             better place through thoughtful design and expert engineering. Our
             mission is to not only build structures but to build a legacy of

@@ -24,8 +24,8 @@ const Administration = () => {
             progress reports, coordination with contractors, and quality
             control. Our team ensures that every phase of construction meets the
             highest standards of safety, efficiency, and craftsmanship. Whether
-            you’re managing a residential, commercial, or public project, our
-            Construction Administration services are tailored to your unique
+            you&apos;re managing a residential, commercial, or public project,
+            our Construction Administration services are tailored to your unique
             needs and vision. We focus on proactive problem-solving and
             efficient communication, ensuring that your project stays on
             schedule and within budget. From the initial groundbreaking to the

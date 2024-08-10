@@ -35,7 +35,7 @@ const Landscape = () => {
               detailed design documentation, including structural drawings,
               material specifications, and construction guidelines, ensuring
               that every project is executed to the highest standards. Whether
-              you’re looking to enhance a residential property, commercial
+              you&apos;re looking to enhance a residential property, commercial
               space, or public area, our landscape structural design services
               are tailored to your unique vision and needs. We focus on
               sustainable and innovative solutions that not only beautify your

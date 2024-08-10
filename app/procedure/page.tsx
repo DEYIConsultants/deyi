@@ -15,12 +15,12 @@ const Procedure = () => {
   const router = useRouter();
 
   return (
-    <div className='h-auto flex flex-col overflow-hidden'>
-      <div className='flex flex-col items-start mt-10 mb-10 mx-4 sm:mx-14 px-4 sm:px-6 text-primary'>
-        <h1 className='font-bold text-3xl sm:text-4xl mb-4 sm:mb-6 mt-10 sm:mt-20 items-center text-primary'>
-          The Reason You Will Choose Us
+    <div className='h-auto flex flex-col overflow-hidden p-4 md:p-8'>
+      <div className='flex flex-col items-start mt-32 mb-10 mx-10 text-primary gap-4'>
+        <h1 className='font-bold text-3xl mb-4 text-primary'>
+          THE REASON YOU WILL CHOOSE US
         </h1>
-        <h2 className='text-base sm:text-lg text-primary'>
+        <h2 className='text-base text-destructive'>
           At DEYI, we specialize in six core areas of expertise to meet all your
           construction and development needs. Our services include residential
           Structural Design, ensuring your homes are not just beautiful but also

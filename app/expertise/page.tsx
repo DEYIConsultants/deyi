@@ -17,31 +17,28 @@ const Expertise: React.FC = () => {
   const router = useRouter();
   return (
     <div className='h-auto flex flex-col justify-center items-start overflow-hidden p-4 md:p-8'>
-      <div className='flex flex-col items-start mt-16 md:mt-32 mb-10 mx-4 md:mx-14 text-primary'>
-        <h1 className='font-bold text-xl md:text-2xl mb-4 md:mb-6 text-primary'>
-          Service Area We Specialize
+      <div className='flex flex-col items-start mt-32 mb-10 mx-10 text-primary gap-4'>
+        <h1 className='font-bold text-3xl mb-4 text-primary'>
+          SERVICE AREA WE SPECIALIZE
         </h1>
-        <h2 className='text-base md:text-lg text-destructive'>
+        <h2 className='text-base text-destructive'>
           At DEYI Consultants, our extensive experience and dedication to
           excellence set us apart in the structural design industry. With a
           proven track record of delivering projects that meet and exceed city
           codes and regulations, we ensure that your construction and
           development needs are met with precision and reliability. We
-          specialize in six core areas of expertise: Residential/Commercial
-          Structural Design, Permit Application services, Landscape Detail
-          Structural Design, Playground Structural Design, Construction
-          Administration, and Title 24 compliance. Each of these services is
-          tailored to ensure that your projects are not only aesthetically
-          pleasing but also structurally sound and safe. Our team excels in
-          navigating the complex regulatory landscape to obtain necessary
-          approvals seamlessly. Whether it’s creating innovative and sustainable
-          outdoor spaces or ensuring energy efficiency and environmental
-          sustainability, we are committed to aligning your projects with the
-          latest standards. At DEYI Consultants, we pride ourselves on our
-          professional approach and our ability to handle all structural design
-          projects, even those not listed on our website. Partner with us for
-          unparalleled expertise and a steadfast commitment to delivering
-          quality and compliance in every project we undertake.
+          specialize in the following six core areas of expertise. Each of these
+          services is tailored to ensure that your projects are not only
+          aesthetically pleasing but also structurally sound and safe. Our team
+          excels in navigating the complex regulatory landscape to obtain
+          necessary approvals seamlessly. Whether it&apos;s creating innovative
+          and sustainable outdoor spaces or ensuring energy efficiency and
+          environmental sustainability, we are committed to aligning your
+          projects with the latest standards. At DEYI Consultants, we pride
+          ourselves on our professional approach and our ability to handle all
+          structural design projects, even those not listed on our website.
+          Partner with us for unparalleled expertise and a steadfast commitment
+          to delivering quality and compliance in every project we undertake.
         </h2>
       </div>
 
