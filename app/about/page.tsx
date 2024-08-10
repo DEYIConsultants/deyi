@@ -43,7 +43,7 @@ export default function About() {
           />
         </div>
 
-        <h2 className='text-destructive flex flex-col'>
+        <div className='text-destructive flex flex-col'>
           <h3 className='my-4 font-base'>
             At DEYI Consultants, our mission is to provide innovative and
             sustainable design and construction solutions that meet the highest
@@ -107,7 +107,7 @@ export default function About() {
             innovation, sustainability, and excellence that will stand the test
             of time.
           </h3>
-        </h2>
+        </div>
       </div>
     </>
   );

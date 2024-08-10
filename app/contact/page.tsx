@@ -21,7 +21,10 @@ export default function Contact() {
     message: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [successMessage, setSuccessMessage] = useState('');
+  const [successMessage, setSuccessMessage] = useState({
+    message: '',
+    type: '',
+  });
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -45,12 +48,16 @@ export default function Contact() {
     setIsSubmitting(false);
 
     if (response.ok) {
-      setSuccessMessage('Your message has been sent successfully!');
+      setSuccessMessage({
+        message: 'Your message has been sent successfully!',
+        type: 'success',
+      });
       setFormData({ name: '', email: '', message: '' });
     } else {
-      setSuccessMessage(
-        'There was an error sending your message. Please try again.'
-      );
+      setSuccessMessage({
+        message: 'There was an error sending your message. Please try again.',
+        type: 'error',
+      });
     }
   };
 
@@ -73,7 +80,7 @@ export default function Contact() {
         <div className='lg:w-1/2 w-full flex mx-auto'>
           <Card className='bg-primary text-white p-6 flex-grow min-h-[350px] flex flex-col justify-between'>
             <CardHeader>
-              <CardTitle>Let's Keep In Touch</CardTitle>
+              <CardTitle>Let&apos;s Keep In Touch</CardTitle>
             </CardHeader>
             <CardContent className='flex-grow'>
               <div className='space-y-2'>
@@ -84,10 +91,10 @@ export default function Contact() {
                 <p>
                   Email:{' '}
                   <a
-                    href='mailto:info@deyiconsultants'
+                    href='mailto:info@deyiconsultants.com'
                     className='text-blue-600'
                   >
-                    info@deyiconsultants
+                    info@deyiconsultants.com
                   </a>
                 </p>
                 <br />
@@ -168,9 +175,17 @@ export default function Contact() {
                 </Button>
               </form>
             </CardContent>
-            {successMessage && (
+            {successMessage.message && (
               <CardFooter>
-                <p className='text-green-500'>{successMessage}</p>
+                <p
+                  className={
+                    successMessage.type === 'success'
+                      ? 'text-green-500'
+                      : 'text-red-500'
+                  }
+                >
+                  {successMessage.message}
+                </p>
               </CardFooter>
             )}
           </Card>
