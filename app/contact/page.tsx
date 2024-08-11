@@ -68,8 +68,8 @@ export default function Contact() {
         <Image
           src={homeImage}
           alt='Home page background image'
-          layout='fill'
-          objectFit='cover'
+          fill
+          style={{ objectFit: 'cover' }}
           className='opacity-10'
         />
       </div>

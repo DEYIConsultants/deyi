@@ -52,8 +52,8 @@ const Expertise: React.FC = () => {
               <Image
                 src='/images/iStock-104294966.jpg'
                 alt='Expertise'
-                layout='fill' // Use 'fill' to ensure the image covers the area
-                objectFit='cover' // Ensures the image covers the area without distortion
+                fill
+                style={{ objectFit: 'cover' }}
               />
             </CardMedia>
             <CardContent
@@ -96,8 +96,8 @@ const Expertise: React.FC = () => {
               <Image
                 src='/images/iStock-104294966.jpg'
                 alt='Expertise'
-                layout='fill' // Use 'fill' to ensure the image covers the area
-                objectFit='cover'
+                fill
+                style={{ objectFit: 'cover' }}
               />
             </CardMedia>
             <CardContent
@@ -136,8 +136,8 @@ const Expertise: React.FC = () => {
               <Image
                 src='/images/iStock-104294966.jpg'
                 alt='Expertise'
-                layout='fill' // Use 'fill' to ensure the image covers the area
-                objectFit='cover'
+                fill
+                style={{ objectFit: 'cover' }}
               />
             </CardMedia>
             <CardContent
@@ -177,8 +177,8 @@ const Expertise: React.FC = () => {
               <Image
                 src='/images/iStock-104294966.jpg'
                 alt='Expertise'
-                layout='fill' // Use 'fill' to ensure the image covers the area
-                objectFit='cover'
+                fill
+                style={{ objectFit: 'cover' }}
               />
             </CardMedia>
             <CardContent
@@ -218,8 +218,8 @@ const Expertise: React.FC = () => {
               <Image
                 src='/images/iStock-104294966.jpg'
                 alt='Expertise'
-                layout='fill' // Use 'fill' to ensure the image covers the area
-                objectFit='cover'
+                fill
+                style={{ objectFit: 'cover' }}
               />
             </CardMedia>
             <CardContent
@@ -258,8 +258,8 @@ const Expertise: React.FC = () => {
               <Image
                 src='/images/iStock-104294966.jpg'
                 alt='Expertise'
-                layout='fill' // Use 'fill' to ensure the image covers the area
-                objectFit='cover'
+                fill
+                style={{ objectFit: 'cover' }}
               />
             </CardMedia>
             <CardContent
