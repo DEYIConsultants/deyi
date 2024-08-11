@@ -11,7 +11,7 @@ const Administration = () => {
       <div className='h-screen flex flex-row'>
         <div className='flex flex-col w-2/3 text-primary items-center justify-center'>
           <h1 className='text-4xl font-bold p-4 text-center'>
-            Landscape Structural Design
+            Construction Administration
           </h1>
           <h2 className='text-base leading-relaxed text-destructive mx-12'>
             We offer comprehensive Construction Administration services that

@@ -75,7 +75,7 @@ export default function Contact() {
       </div>
 
       {/* Cards Container */}
-      <div className='flex flex-col lg:flex-row lg:space-x-8 w-full lg:max-w-6xl z-10 h-auto mx-auto p-4 lg:p-8'>
+      <div className='flex flex-col mt-20 lg:flex-row lg:space-x-8 w-full lg:max-w-6xl z-10 h-auto mx-auto p-4 lg:p-8'>
         {/* Contact Info Card */}
         <div className='lg:w-1/2 w-full flex mx-auto'>
           <Card className='bg-primary text-white p-6 flex-grow min-h-[350px] flex flex-col justify-between'>
