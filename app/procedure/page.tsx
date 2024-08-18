@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import Button from '@mui/material/Button';
 import PhoneIcon from '@/public/icons/phone.png';
-import procedure1 from '@/public/images/aboutImage2.jpg';
+import procedure1 from '@/public/images/pic24.jpg';
 import procedure2 from '@/public/images/aboutpic.jpg';
 import procedure3 from '@/public/images/homeImage.jpg';
 import procedure4 from '@/public/images/aboutImage3.jpg';
