@@ -1,7 +1,6 @@
 'use client';
 
 import Image from 'next/image';
-import aboutPic from '@/public/images/aboutpic.jpg';
 import { useRouter } from 'next/navigation';
 
 const Playground = () => {
@@ -12,7 +11,7 @@ const Playground = () => {
         <div className='w-full md:w-1/2 h-auto bg-primary p-6 flex flex-col items-center justify-center rounded-full'>
           <div className='bg-white m-2 p-3 rounded-full'>
             <Image
-              src={aboutPic}
+              src='/images/pic12.jpg'
               alt='Residential Structural Design'
               objectFit='cover'
               width={600}

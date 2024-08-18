@@ -1,7 +1,6 @@
 'use client';
 
 import Image from 'next/image';
-import aboutPic from '@/public/images/aboutpic.jpg';
 import { useRouter } from 'next/navigation';
 
 const Administration = () => {
@@ -41,7 +40,7 @@ const Administration = () => {
           <div className='flex flex-col'>
             <div className='w-full mt-20 my-8'>
               <Image
-                src={aboutPic}
+                src='/images/pic17.jpg'
                 alt='Residential Structural Design'
                 layout='responsive'
                 width={600}
@@ -51,7 +50,7 @@ const Administration = () => {
             </div>
             <div className='w-full my-8'>
               <Image
-                src={aboutPic}
+                src='/images/pic15.jpg'
                 alt='Residential Structural Design'
                 layout='responsive'
                 width={600}

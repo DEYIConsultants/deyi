@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import aboutPic from '@/public/images/aboutpic.jpg';
+import aboutPic from '@/public/images/pic5.jpg';
 import divider from '@/public/icons/divider.png';
 
 export default function About() {

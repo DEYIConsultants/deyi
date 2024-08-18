@@ -1,23 +1,22 @@
 'use client';
 
 import Image from 'next/image';
-import aboutPic from '@/public/images/aboutpic.jpg';
 import { useRouter } from 'next/navigation';
 
 const Landscape = () => {
   const router = useRouter();
   return (
     <div className='flex flex-col'>
-      <div className='h-screen flex flex-row'>
+      <div className='h-full flex flex-row'>
         <div className='w-1/3 bg-primary text-white flex items-center justify-center mt-16'>
           <h1 className='text-4xl font-bold p-4 text-center'>
             Landscape Structural Design
           </h1>
         </div>
-        <div className='w-2/3 flex flex-col items-center justify-center p-8 mt-16'>
+        <div className='h-full w-2/3 flex flex-col items-center justify-center p-8 mt-16'>
           <div className='w-full'>
             <Image
-              src={aboutPic}
+              src='/images/pic20.jpg'
               alt='Residential Structural Design'
               layout='responsive'
               width={600}

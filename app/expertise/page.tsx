@@ -50,7 +50,7 @@ const Expertise: React.FC = () => {
           <CardActionArea>
             <CardMedia className='h-48 w-full' style={{ position: 'relative' }}>
               <Image
-                src='/images/iStock-104294966.jpg'
+                src='/images/pic1.jpg'
                 alt='Expertise'
                 fill
                 style={{ objectFit: 'cover' }}
@@ -134,7 +134,7 @@ const Expertise: React.FC = () => {
           <CardActionArea>
             <CardMedia className='h-48 w-full' style={{ position: 'relative' }}>
               <Image
-                src='/images/iStock-104294966.jpg'
+                src='/images/pic4.jpg'
                 alt='Expertise'
                 fill
                 style={{ objectFit: 'cover' }}
@@ -175,7 +175,7 @@ const Expertise: React.FC = () => {
           <CardActionArea>
             <CardMedia className='h-48 w-full' style={{ position: 'relative' }}>
               <Image
-                src='/images/iStock-104294966.jpg'
+                src='/images/pic11.jpg'
                 alt='Expertise'
                 fill
                 style={{ objectFit: 'cover' }}
@@ -216,7 +216,7 @@ const Expertise: React.FC = () => {
           <CardActionArea>
             <CardMedia className='h-48 w-full' style={{ position: 'relative' }}>
               <Image
-                src='/images/iStock-104294966.jpg'
+                src='/images/pic16.jpg'
                 alt='Expertise'
                 fill
                 style={{ objectFit: 'cover' }}
@@ -256,7 +256,7 @@ const Expertise: React.FC = () => {
           <CardActionArea>
             <CardMedia className='h-48 w-full' style={{ position: 'relative' }}>
               <Image
-                src='/images/iStock-104294966.jpg'
+                src='/images/pic22.jpg'
                 alt='Expertise'
                 fill
                 style={{ objectFit: 'cover' }}
