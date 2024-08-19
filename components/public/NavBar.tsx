@@ -79,7 +79,7 @@ export default function NavBar() {
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href='/sitevisit' legacyBehavior passHref>
+              <Link href='/appoitment' legacyBehavior passHref>
                 <NavigationMenuLink
                   className={`${navigationMenuTriggerStyle()} font-bold bg-primary text-white px-3 py-2 rounded hover:bg-primary/70`}
                 >
@@ -135,7 +135,7 @@ export default function NavBar() {
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href='/' legacyBehavior passHref>
+              <Link href='/appoitment' legacyBehavior passHref>
                 <NavigationMenuLink
                   className={`${navigationMenuTriggerStyle()} font-bold py-2 px-4`}
                   onClick={toggleMenu}

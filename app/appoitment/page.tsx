@@ -15,7 +15,7 @@ export default function Appoitment() {
   return (
     <div className='App mt-20'>
       {/* <InlineWidget url={`${URL}`} /> */}
-      <InlineWidget url='https://calendly.com/info-y_ai' />
+      <InlineWidget url='https://calendly.com/info-y_ai/site-visit' />
     </div>
   );
 }
