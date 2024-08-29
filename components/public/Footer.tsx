@@ -17,29 +17,29 @@ export default function Footer() {
             <CardTitle className='font-bold text-xs'>Quick Links</CardTitle>
           </CardHeader>
           <CardContent className='flex flex-row items-center justify-center space-x-6 py-2'>
-            <Link href='/' legacyBehavior passHref>
+            <Link href='/about' legacyBehavior passHref>
               <span className='text-midnight-blue cursor-pointer text-xs'>
                 About
               </span>
             </Link>
-            <Link href='/' legacyBehavior passHref>
+            <Link href='/expertise' legacyBehavior passHref>
               <span className='text-midnight-blue cursor-pointer text-xs'>
                 Expertise
               </span>
             </Link>
-            <Link href='/' legacyBehavior passHref>
+            <Link href='/procedure' legacyBehavior passHref>
               <span className='text-midnight-blue cursor-pointer text-xs'>
                 Procedure
               </span>
             </Link>
-            <Link href='/' legacyBehavior passHref>
+            <Link href='/contact' legacyBehavior passHref>
               <span className='text-midnight-blue cursor-pointer text-xs'>
                 Contact
               </span>
             </Link>
-            <Link href='/' legacyBehavior passHref>
+            <Link href='/appoitment' legacyBehavior passHref>
               <span className='text-midnight-blue cursor-pointer text-xs'>
-                Login
+                Schedule Appoitment
               </span>
             </Link>
           </CardContent>
