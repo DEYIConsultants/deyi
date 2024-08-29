@@ -10,7 +10,7 @@ const Application = () => {
     <div className='flex flex-col'>
       <div className='flex flex-col md:flex-row h-auto mt-16 ml-6 bottom-6'>
         <div className='w-full md:w-1/2 flex flex-col items-center justify-center p-4'>
-          <h1 className='font-bold text-3xl text-primary'>
+          <h1 className='font-bold text-4xl text-primary'>
             Permit Application
           </h1>
           <h2 className='text-destructive my-4 text-center'>

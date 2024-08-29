@@ -16,9 +16,8 @@ export default function Home() {
         <Image
           src={homeImage}
           alt='Home page background image'
-          layout='fill'
-          objectFit='cover'
-          style={{ opacity: 0.3 }}
+          fill
+          style={{ opacity: 0.3, objectFit: 'cover' }}
           className='z-0' // Ensure it stays behind other elements
         />
         <div className='absolute inset-0 flex flex-col items-center justify-center z-10'>
@@ -28,7 +27,10 @@ export default function Home() {
           </h2>
 
           <div className='mt-20 space-x-8 flex'>
-            <Button className='buttonExplore bg-white text-midnight-blue font-base'>
+            <Button
+              onClick={() => router.push('/expertise')}
+              className='buttonExplore bg-white text-midnight-blue font-base'
+            >
               <Image
                 src={NavigateIcon}
                 alt='Navigate icon'
