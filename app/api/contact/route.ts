@@ -10,7 +10,7 @@ interface ContactFormData {
   message: string;
 }
 
-export async function POST(request: NextRequest) {
+export async function POST(request: NextRequest, response: NextResponse) {
   try {
     if (!request.headers.get('content-type')?.includes('application/json')) {
       return NextResponse.json(
@@ -22,12 +22,12 @@ export async function POST(request: NextRequest) {
     const requestBody = await request.json();
     console.log('Request body:', requestBody);
 
-    if (!request.body) {
-      return NextResponse.json(
-        { message: 'Request body is missing' },
-        { status: 400 }
-      );
-    }
+    // if (!request.body) {
+    //   return NextResponse.json(
+    //     { message: 'Request body is missing' },
+    //     { status: 400 }
+    //   );
+    // }
 
     const { name, email, message }: ContactFormData = requestBody;
 
@@ -60,16 +60,31 @@ export async function POST(request: NextRequest) {
 
     console.log('>>> Email sent to:', receiverEmail);
 
-    return NextResponse.json(
-      { message: 'Email sent successfully' },
-      { status: 200 }
+    // return NextResponse.json(
+    //   { message: 'Email sent successfully' },
+    //   { status: 200 }
+    // );
+
+    return new Response(
+      JSON.stringify({ message: 'Email sent successfully' }),
+      {
+        status: 200,
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      }
     );
   } catch (error) {
     console.error('Error parsing JSON or sending email:', error);
 
-    return NextResponse.json(
-      { message: 'Error processing request', error: (error as Error).message },
-      { status: 500 }
+    return new Response(
+      JSON.stringify({ message: 'Error sending email: ', error }),
+      {
+        status: 500,
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      }
     );
   }
 }
