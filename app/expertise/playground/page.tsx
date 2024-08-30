@@ -1,7 +1,6 @@
 'use client';
 
 import Image from 'next/image';
-import aboutPic from '@/public/images/aboutpic.jpg';
 import { useRouter } from 'next/navigation';
 
 const Playground = () => {
@@ -12,7 +11,7 @@ const Playground = () => {
         <div className='w-full md:w-1/2 h-auto bg-primary p-6 flex flex-col items-center justify-center rounded-full'>
           <div className='bg-white m-2 p-3 rounded-full'>
             <Image
-              src={aboutPic}
+              src='/images/pic12.jpg'
               alt='Residential Structural Design'
               objectFit='cover'
               width={600}
@@ -57,9 +56,11 @@ const Playground = () => {
 
       <div className='flex flex-col items-center justify-center p-14 bg-gray-200'>
         <h3 className='text-sm font-sans md:text-sm font-semibold text-center text-primary mb-4'>
-          Team up with our experts in Playground Structural Design to create
-          comprehensive, compliant plans and designs tailored to your specific
-          needs and local safety standards.
+          Collaborate with our playground structural design experts to create
+          safe, engaging, and durable play spaces. We focus on designing
+          playgrounds that not only meet safety standards and local regulations
+          but also inspire creativity and joy, ensuring a fun and secure
+          environment for children of all ages.
         </h3>
         <button
           onClick={() => router.push('/contact')}

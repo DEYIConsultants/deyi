@@ -48,11 +48,11 @@ export default function Contact() {
     setIsSubmitting(false);
 
     if (response.ok) {
+      setFormData({ name: '', email: '', message: '' });
       setSuccessMessage({
         message: 'Your message has been sent successfully!',
         type: 'success',
       });
-      setFormData({ name: '', email: '', message: '' });
     } else {
       setSuccessMessage({
         message: 'There was an error sending your message. Please try again.',

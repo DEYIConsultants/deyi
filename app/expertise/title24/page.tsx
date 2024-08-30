@@ -1,7 +1,6 @@
 'use client';
 
 import Image from 'next/image';
-import aboutPic from '@/public/images/aboutpic.jpg';
 import { useRouter } from 'next/navigation';
 
 const Title = () => {
@@ -37,7 +36,7 @@ const Title = () => {
           <div className='w-full h-auto bg-primary p-6 flex flex-row items-center justify-center'>
             <div className='bg-white m-2 p-3'>
               <Image
-                src={aboutPic}
+                src='/images/pic14.jpg'
                 alt='Residential Structural Design'
                 objectFit='cover'
                 width={600}
@@ -47,7 +46,7 @@ const Title = () => {
             </div>
             <div className='bg-white m-2 p-3'>
               <Image
-                src={aboutPic}
+                src='/images/residential.jpg'
                 alt='Residential Structural Design'
                 objectFit='cover'
                 width={600}
@@ -57,7 +56,7 @@ const Title = () => {
             </div>
             <div className='bg-white m-2 p-3'>
               <Image
-                src={aboutPic}
+                src='/images/pic8.jpg'
                 alt='Residential Structural Design'
                 objectFit='cover'
                 width={600}
@@ -71,10 +70,11 @@ const Title = () => {
 
       <div className='flex flex-col items-center justify-center p-14 bg-gray-200'>
         <h3 className='text-sm font-sans md:text-sm font-semibold text-center text-primary mb-4'>
-          Team up with our experts in Title 24 compliance to create
-          comprehensive, energy-efficient plans and documentation tailored to
-          your specific project needs and California&apos;s stringent energy
-          standards.
+          Work with our Title 24 experts to ensure your building projects meet
+          California’s stringent energy efficiency standards. We provide
+          comprehensive compliance analysis and tailored solutions that optimize
+          energy performance, reduce environmental impact, and ensure your
+          designs align with state regulations for a sustainable future.
         </h3>
         <button
           onClick={() => router.push('/contact')}
