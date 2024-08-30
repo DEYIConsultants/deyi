@@ -123,9 +123,11 @@ const Structuraldesign = () => {
         </h2>
         <div className='flex flex-col items-center justify-center p-14 mt-20  bg-gray-200'>
           <h3 className='text-sm font-sans md:text-sm font-semibold text-center text-primary mb-4'>
-            Team up with our experts in ADU permit applications to create
-            comprehensive, compliant plans and designs tailored to your specific
-            needs and city requirements.
+            Partner with our skilled structural design team to develop robust,
+            code-compliant designs for your residential or commercial projects.
+            We deliver customized solutions that meet your specific needs and
+            local building regulations, ensuring the safety and integrity of
+            your structures from concept to completion.
           </h3>
           <button
             onClick={() => router.push('/contact')}

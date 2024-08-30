@@ -56,9 +56,11 @@ const Playground = () => {
 
       <div className='flex flex-col items-center justify-center p-14 bg-gray-200'>
         <h3 className='text-sm font-sans md:text-sm font-semibold text-center text-primary mb-4'>
-          Team up with our experts in Playground Structural Design to create
-          comprehensive, compliant plans and designs tailored to your specific
-          needs and local safety standards.
+          Collaborate with our playground structural design experts to create
+          safe, engaging, and durable play spaces. We focus on designing
+          playgrounds that not only meet safety standards and local regulations
+          but also inspire creativity and joy, ensuring a fun and secure
+          environment for children of all ages.
         </h3>
         <button
           onClick={() => router.push('/contact')}

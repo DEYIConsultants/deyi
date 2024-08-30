@@ -63,9 +63,12 @@ const Administration = () => {
       </div>
       <div className='flex flex-col items-center justify-center p-14 bg-gray-200'>
         <h3 className='text-sm font-sans md:text-sm font-semibold text-center text-primary mb-4'>
-          Team up with our experts in Construction Administration to oversee
-          your project, ensuring that every phase meets your specific needs,
-          design specifications, and all regulatory requirements.
+          Partner with our construction administration team to ensure your
+          project is executed with precision and efficiency. We oversee every
+          phase of construction, providing expert guidance, quality control, and
+          proactive solutions to keep your project on track, on budget, and in
+          compliance with all regulations, ensuring a successful and smooth
+          completion.
         </h3>
         <button
           onClick={() => router.push('/contact')}

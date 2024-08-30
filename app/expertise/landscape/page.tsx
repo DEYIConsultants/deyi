@@ -51,9 +51,12 @@ const Landscape = () => {
       </div>
       <div className='flex flex-col items-center justify-center p-14 bg-gray-200'>
         <h3 className='text-sm font-sans md:text-sm font-semibold text-center text-primary mb-4'>
-          Team up with our experts in ADU permit applications to create
-          comprehensive, compliant plans and designs tailored to your specific
-          needs and city requirements.
+          Collaborate with our landscape structural design specialists to
+          transform your outdoor spaces into sustainable and aesthetically
+          pleasing environments. We create designs that seamlessly blend with
+          natural surroundings while meeting structural integrity and local
+          regulations, ensuring that your landscape not only enhances the beauty
+          of your property but also stands the test of time.
         </h3>
         <button
           onClick={() => router.push('/contact')}

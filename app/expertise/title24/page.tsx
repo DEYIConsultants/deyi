@@ -70,10 +70,11 @@ const Title = () => {
 
       <div className='flex flex-col items-center justify-center p-14 bg-gray-200'>
         <h3 className='text-sm font-sans md:text-sm font-semibold text-center text-primary mb-4'>
-          Team up with our experts in Title 24 compliance to create
-          comprehensive, energy-efficient plans and documentation tailored to
-          your specific project needs and California&apos;s stringent energy
-          standards.
+          Work with our Title 24 experts to ensure your building projects meet
+          California’s stringent energy efficiency standards. We provide
+          comprehensive compliance analysis and tailored solutions that optimize
+          energy performance, reduce environmental impact, and ensure your
+          designs align with state regulations for a sustainable future.
         </h3>
         <button
           onClick={() => router.push('/contact')}
