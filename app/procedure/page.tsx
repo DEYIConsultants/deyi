@@ -42,12 +42,12 @@ const Procedure = () => {
       <div className='flex flex-col sm:flex-row items-center mx-4 sm:mx-14 px-4 sm:px-6 bg-slate-200'>
         <div className='w-full sm:w-1/2 flex justify-center mb-4 sm:mb-0'>
           <Image
-            src={procedure1}
-            alt='About picture'
-            objectFit='cover'
+            src='/images/pic30.jpg'
+            alt='Residential Structural Design'
+            layout='responsive'
+            width={600}
             height={400}
-            style={{ opacity: 1 }}
-            className='z-10 mt-8'
+            className='w-full border-2 border-zinc-400 rounded-lg shadow-lg'
           />
         </div>
         <div className='w-full sm:w-1/2 flex flex-col justify-center items-center bg-slate-200 bg-opacity-60 text-primary h-[400px] p-6'>
@@ -83,12 +83,12 @@ const Procedure = () => {
         </div>
         <div className='w-full sm:w-1/2 flex justify-center mb-4 sm:mb-0'>
           <Image
-            src={procedure2}
-            alt='About picture'
-            objectFit='cover'
+            src='/images/pic32.jpg'
+            alt='Residential Structural Design'
+            layout='responsive'
+            width={600}
             height={400}
-            style={{ opacity: 1 }}
-            className='z-10'
+            className='w-full border-2 border-zinc-400 rounded-lg shadow-lg'
           />
         </div>
       </div>
@@ -96,12 +96,12 @@ const Procedure = () => {
       <div className='flex flex-col sm:flex-row items-center mx-4 sm:mx-14 px-4 sm:px-6 bg-slate-200'>
         <div className='w-full sm:w-1/2 flex justify-center mb-4 sm:mb-0'>
           <Image
-            src={procedure3}
-            alt='About picture'
-            objectFit='cover'
+            src='/images/pic34.jpg'
+            alt='Residential Structural Design'
+            layout='responsive'
+            width={600}
             height={400}
-            style={{ opacity: 1 }}
-            className='z-10'
+            className='w-full border-2 border-zinc-400 rounded-lg shadow-lg'
           />
         </div>
         <div className='w-full sm:w-1/2 flex flex-col justify-center items-center bg-thdwhite bg-opacity-60 text-primary h-[400px]'>
@@ -121,12 +121,12 @@ const Procedure = () => {
         </div>
         <div className='w-full sm:w-1/2 flex justify-center mb-4 sm:mb-0'>
           <Image
-            src={procedure4}
-            alt='About picture'
-            objectFit='cover'
+            src='/images/pic31.jpg'
+            alt='Residential Structural Design'
+            layout='responsive'
+            width={600}
             height={400}
-            style={{ opacity: 1 }}
-            className='z-10 '
+            className='w-full border-2 border-zinc-400 rounded-lg shadow-lg'
           />
         </div>
       </div>
@@ -134,12 +134,12 @@ const Procedure = () => {
       <div className='flex flex-col sm:flex-row items-center mx-4 sm:mx-14 px-4 sm:px-6 bg-slate-200'>
         <div className='w-full sm:w-1/2 flex justify-center mb-4 sm:mb-0'>
           <Image
-            src={procedure5}
-            alt='About picture'
-            objectFit='cover'
+            src='/images/pic29.jpg'
+            alt='Residential Structural Design'
+            layout='responsive'
+            width={600}
             height={400}
-            style={{ opacity: 1 }}
-            className='z-10 mb-8'
+            className='w-full border-2 border-zinc-400 rounded-lg shadow-lg'
           />
         </div>
         <div className='w-full sm:w-1/2 flex flex-col justify-center items-center bg-thdwhite bg-opacity-60 text-primary h-[400px]'>
