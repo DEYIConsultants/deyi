@@ -1,9 +1,11 @@
 'use client';
 
 import { useCalendlyEventListener, InlineWidget } from 'react-calendly';
+import dotenv from 'dotenv';
+dotenv.config();
 
 export default function Appoitment() {
-  const URL = process.env.REACT_APP_APPOITMENT_URL;
+  const URL = process.env.NEXT_PUBLIC_APPOITMENT_URL;
 
   useCalendlyEventListener({
     onProfilePageViewed: () => console.log('onProfilePageViewed'),

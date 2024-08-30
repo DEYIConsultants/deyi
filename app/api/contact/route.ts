@@ -20,15 +20,6 @@ export async function POST(request: NextRequest, response: NextResponse) {
     }
 
     const requestBody = await request.json();
-    console.log('Request body:', requestBody);
-
-    // if (!request.body) {
-    //   return NextResponse.json(
-    //     { message: 'Request body is missing' },
-    //     { status: 400 }
-    //   );
-    // }
-
     const { name, email, message }: ContactFormData = requestBody;
 
     const userEmail = process.env.EMAIL_USER;
@@ -57,8 +48,6 @@ export async function POST(request: NextRequest, response: NextResponse) {
     };
 
     await transporter.sendMail(mailOptions);
-
-    console.log('>>> Email sent to:', receiverEmail);
 
     // return NextResponse.json(
     //   { message: 'Email sent successfully' },
