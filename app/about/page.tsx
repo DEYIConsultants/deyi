@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import aboutPic from '@/public/images/pic5.jpg';
 import divider from '@/public/icons/divider.png';
 
 export default function About() {
@@ -17,7 +16,7 @@ export default function About() {
         </div>
         <div className='mt-6 md:mt-0 md:w-1/2 w-full flex justify-center'>
           <Image
-            src={aboutPic}
+            src='/images/pic5.JPG'
             alt='About picture'
             objectFit='cover'
             height={400}
