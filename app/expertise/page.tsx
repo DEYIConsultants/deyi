@@ -77,7 +77,7 @@ const Structuraldesign = () => {
           </div>
           <div className='flex justify-center md:w-1/2 md:pl-6'>
             <Image
-              src='/images/pic10.jpg'
+              src='/images/pic10.JPG'
               alt='Residential Structural Design'
               objectFit='cover'
               width={600}
@@ -135,7 +135,7 @@ const Structuraldesign = () => {
           </div>
           <div className='flex justify-center md:w-1/2 md:pl-6'>
             <Image
-              src='/images/pic7.jpg'
+              src='/images/pic7.JPG'
               alt='Commercial Structural Design'
               objectFit='cover'
               width={600}
