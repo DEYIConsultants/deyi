@@ -38,10 +38,10 @@ const Structuraldesign = () => {
                   </span>
                   Our residential structural design services ensure that your
                   home is built on a foundation of safety, durability, and
-                  aesthetic appeal. Whether you're constructing a new residence
-                  or remodeling an existing structure, our experts are here to
-                  provide comprehensive design solutions that meet all building
-                  codes and standards.
+                  aesthetic appeal. Whether you&apos;re constructing a new
+                  residence or remodeling an existing structure, our experts are
+                  here to provide comprehensive design solutions that meet all
+                  building codes and standards.
                 </li>
                 <li className='my-2'>
                   <span className='font-bold text-primary'>
