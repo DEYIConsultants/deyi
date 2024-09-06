@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://deyiconsultants.com
+
+# Sitemaps
+Sitemap: https://deyiconsultants.com/sitemap.xml
