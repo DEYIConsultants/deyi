@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import { useRouter } from 'next/navigation';
 import Button from '@mui/material/Button';
 import PhoneIcon from '@/public/icons/phone.png';

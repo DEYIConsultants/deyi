@@ -11,7 +11,7 @@ import {
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import homeImage from '@/public/images/homeImage.jpg';
 
 export default function Contact() {

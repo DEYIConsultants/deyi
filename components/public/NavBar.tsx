@@ -7,7 +7,7 @@ import {
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu';
 import Link from 'next/link';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import { Menu, X } from 'react-feather';
 import { useState } from 'react';
 

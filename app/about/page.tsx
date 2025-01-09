@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import divider from '@/public/icons/divider.png';
 
 export default function About() {

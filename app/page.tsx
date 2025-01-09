@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import homeImage from '../public/images/homeImage.jpg';
 import PhoneIcon from '@/public/icons/phone.png';
 import NavigateIcon from '@/public/icons/navigate.png';
