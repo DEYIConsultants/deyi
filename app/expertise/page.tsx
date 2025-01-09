@@ -12,8 +12,9 @@ const Structuraldesign = () => {
           SERVICE AREA WE SPECIALIZE
         </h1>
         <h2 className='flex flex-col items-start text-destructive'>
-          At DEYI Consultants, we offer comprehensive structural design services
-          for both residential and commercial projects. With over a decade of
+          At DEYI Consultants, we offer comprehensive structural design for both
+          residential and commercial projects, post-fire structural evaluation,
+          construction administration services and more. With over a decade of
           industry experience, we are committed to delivering designs that are
           not only aesthetically pleasing but also structurally sound and
           compliant with all relevant building codes and regulations.
@@ -90,7 +91,7 @@ const Structuraldesign = () => {
 
       <div className='md:mt-4 mb-10 mx-4 md:mx-14 text-destructive'>
         <h1 className='w-full p-1 indent-4 bg-primary text-white text-2xl my-4 mt-8'>
-          Post-Fire Structural Evaluations
+          Post-Fire Structural Evaluation
         </h1>
         <div className='flex flex-col md:flex-row'>
           <div className='flex flex-col md:w-2/3'>
