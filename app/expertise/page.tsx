@@ -89,6 +89,97 @@ const Structuraldesign = () => {
       </div>
 
       <div className='md:mt-4 mb-10 mx-4 md:mx-14 text-destructive'>
+        <h1 className='w-full p-1 indent-4 bg-primary text-white text-2xl my-4 mt-8'>
+          Post-Fire Structural Evaluations
+        </h1>
+        <div className='flex flex-col md:flex-row'>
+          <div className='flex flex-col md:w-2/3'>
+            <h2>
+              We understand the urgency and importance of assessing structural
+              integrity following a fire event. Our team of experienced
+              engineers provides comprehensive post-fire structural evaluations
+              to ensure the safety, functionality, and longevity of your
+              structures. Our service includes:
+            </h2>
+            <ul className='my-2'>
+              <li className='my-2'>
+                <span className='font-bold text-primary'>
+                  On-Site Inspection:{' '}
+                </span>
+                <ol className='list-disc pl-5'>
+                  <li>
+                    Conducting a detailed visual inspection of fire-damaged
+                    structures to identify compromised components.
+                  </li>
+                  <li>
+                    Documenting the extent of fire, smoke, and water damage to
+                    structural elements.
+                  </li>
+                </ol>
+              </li>
+              <li className='my-2'>
+                <span className='font-bold text-primary'>
+                  Structural Assessment:{' '}
+                </span>
+                <ol className='list-disc pl-5'>
+                  <li>
+                    Analyzing the impact of heat and fire exposure on critical
+                    structural elements such as beams, columns, and connections.
+                  </li>
+                  <li>
+                    Utilizing advanced tools and techniques, including material
+                    testing and non-destructive evaluation methods, to assess
+                    residual structural capacity.
+                  </li>
+                </ol>
+              </li>
+              <li className='my-2'>
+                <span className='font-bold text-primary'>
+                  Detailed Reporting:{' '}
+                </span>
+                <ol className='list-disc pl-5'>
+                  <li>
+                    Delivering a comprehensive assessment report outlining the
+                    current condition of the structure, repair recommendations,
+                    and necessary safety measures.
+                  </li>
+                  <li>
+                    Including repair options ranging from partial replacements
+                    to full structural retrofitting based on damage severity.
+                  </li>
+                </ol>
+              </li>
+              <li className='my-2'>
+                <span className='font-bold text-primary'>
+                  Restoration Support:{' '}
+                </span>
+                <ol className='list-disc pl-5'>
+                  <li>
+                    Collaborating with contractors, architects, and property
+                    owners to develop repair and restoration plans.
+                  </li>
+                  <li>
+                    Offering ongoing consultation during the restoration process
+                    to ensure structural integrity is restored.
+                  </li>
+                </ol>
+              </li>
+            </ul>
+          </div>
+          <div className='flex justify-center md:w-1/2 md:pl-6'>
+            <Image
+              src='/images/pic35.JPG'
+              alt='post-fire restoration'
+              objectFit='cover'
+              width={600}
+              height={400}
+              className='z-10 border-2 border-zinc-400 rounded-lg'
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className='md:mt-4 mb-10 mx-4 md:mx-14 text-destructive'>
         <h1 className='w-full p-1 indent-4 bg-primary text-white my-4 text-2xl'>
           Construction Administration
         </h1>
