@@ -1,13 +1,13 @@
 'use client';
 
-import Image from 'next/image';
+import Image from "next/image";
 import aboutPic from '@/public/images/aboutpic.jpg';
 import { useRouter } from 'next/navigation';
 
 const Application = () => {
   const router = useRouter();
   return (
-    <div className='flex flex-col'>
+    (<div className='flex flex-col'>
       <div className='flex flex-col md:flex-row h-auto mt-16 ml-6 bottom-6'>
         <div className='w-full md:w-1/2 flex flex-col items-center justify-center p-4'>
           <h1 className='font-bold text-4xl text-primary'>
@@ -24,15 +24,17 @@ const Application = () => {
             <Image
               src={aboutPic}
               alt='Residential Structural Design'
-              objectFit='cover'
               width={600}
               height={400}
               className='z-10 border-2 border-zinc-400 shadow-2xl'
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto",
+                objectFit: "cover"
+              }} />
           </div>
         </div>
       </div>
-
       <h2 className='text-destructive mx-14 my-14'>
         We provide a comprehensive ADU (Accessory Dwelling Unit) permit
         application service that includes all necessary graphs and documentation
@@ -51,7 +53,6 @@ const Application = () => {
         design support, ensuring a seamless and customized solution from start
         to finish.
       </h2>
-
       <div className='flex flex-col items-center justify-center p-14 bg-gray-200'>
         <h3 className='text-sm font-sans md:text-sm font-semibold text-center text-primary mb-4'>
           Team up with our experts in ADU permit applications to create
@@ -65,7 +66,7 @@ const Application = () => {
           CONTACT US
         </button>
       </div>
-    </div>
+    </div>)
   );
 };
 

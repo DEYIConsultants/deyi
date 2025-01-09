@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
+import Image from "next/image";
 import { useRouter } from 'next/navigation';
 import Button from '@mui/material/Button';
 import PhoneIcon from '@/public/icons/phone.png';
@@ -15,7 +15,7 @@ const Procedure = () => {
   const router = useRouter();
 
   return (
-    <div className='h-auto flex flex-col overflow-hidden p-4 md:p-8'>
+    (<div className='h-auto flex flex-col overflow-hidden p-4 md:p-8'>
       <div className='flex flex-col items-start mt-32 mb-10 mx-10 text-primary gap-4'>
         <h1 className='font-bold text-3xl mb-4 text-primary'>
           THE REASON YOU WILL CHOOSE US
@@ -38,17 +38,19 @@ const Procedure = () => {
           commitment to excellence in every project we undertake.
         </h2>
       </div>
-
       <div className='flex flex-col sm:flex-row items-center mx-4 sm:mx-14 px-4 sm:px-6 bg-slate-200'>
         <div className='w-full sm:w-1/2 flex justify-center mb-4 sm:mb-0'>
           <Image
             src='/images/pic30.jpg'
             alt='Residential Structural Design'
-            layout='responsive'
             width={600}
             height={400}
             className='w-full border-2 border-zinc-400 rounded-lg shadow-lg'
-          />
+            sizes="100vw"
+            style={{
+              width: "100%",
+              height: "auto"
+            }} />
         </div>
         <div className='w-full sm:w-1/2 flex flex-col justify-center items-center bg-slate-200 bg-opacity-60 text-primary h-[400px] p-6'>
           <span className='font-bold text-lg mb-2'>
@@ -68,13 +70,16 @@ const Procedure = () => {
               color='white'
               width={18}
               height={18}
-              className='mr-2 ' // filter invert
-            />
+              // filter invert
+              className='mr-2 '
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
             <span className='underline'>Click Here to Schedule!</span>
           </Button>
         </div>
       </div>
-
       <div className='flex flex-col sm:flex-row items-center mx-4 sm:mx-14 px-4 sm:px-6 bg-slate-200'>
         <div className='w-full sm:w-1/2 flex flex-col justify-center items-center bg-slate-200 bg-opacity-60 text-primary h-[400px]'>
           <span className='font-bold text-lg'>Step 2. Design</span>
@@ -85,24 +90,29 @@ const Procedure = () => {
           <Image
             src='/images/pic32.jpg'
             alt='Residential Structural Design'
-            layout='responsive'
             width={600}
             height={400}
             className='w-full border-2 border-zinc-400 rounded-lg shadow-lg'
-          />
+            sizes="100vw"
+            style={{
+              width: "100%",
+              height: "auto"
+            }} />
         </div>
       </div>
-
       <div className='flex flex-col sm:flex-row items-center mx-4 sm:mx-14 px-4 sm:px-6 bg-slate-200'>
         <div className='w-full sm:w-1/2 flex justify-center mb-4 sm:mb-0'>
           <Image
             src='/images/pic34.jpg'
             alt='Residential Structural Design'
-            layout='responsive'
             width={600}
             height={400}
             className='w-full border-2 border-zinc-400 rounded-lg shadow-lg'
-          />
+            sizes="100vw"
+            style={{
+              width: "100%",
+              height: "auto"
+            }} />
         </div>
         <div className='w-full sm:w-1/2 flex flex-col justify-center items-center bg-thdwhite bg-opacity-60 text-primary h-[400px]'>
           <span className='font-bold text-lg'>Step 3. Submission</span>
@@ -112,7 +122,6 @@ const Procedure = () => {
           </span>
         </div>
       </div>
-
       <div className='flex flex-col sm:flex-row items-center mx-4 sm:mx-14 px-4 sm:px-6 bg-slate-200'>
         <div className='w-full sm:w-1/2 flex flex-col justify-center items-center bg-thdwhite bg-opacity-60 text-primary h-[400px]'>
           <span className='font-bold text-lg'>Step 4. Plan Check</span>
@@ -123,24 +132,29 @@ const Procedure = () => {
           <Image
             src='/images/pic31.jpg'
             alt='Residential Structural Design'
-            layout='responsive'
             width={600}
             height={400}
             className='w-full border-2 border-zinc-400 rounded-lg shadow-lg'
-          />
+            sizes="100vw"
+            style={{
+              width: "100%",
+              height: "auto"
+            }} />
         </div>
       </div>
-
       <div className='flex flex-col sm:flex-row items-center mx-4 sm:mx-14 px-4 sm:px-6 bg-slate-200'>
         <div className='w-full sm:w-1/2 flex justify-center mb-4 sm:mb-0'>
           <Image
             src='/images/pic29.jpg'
             alt='Residential Structural Design'
-            layout='responsive'
             width={600}
             height={400}
             className='w-full border-2 border-zinc-400 rounded-lg shadow-lg'
-          />
+            sizes="100vw"
+            style={{
+              width: "100%",
+              height: "auto"
+            }} />
         </div>
         <div className='w-full sm:w-1/2 flex flex-col justify-center items-center bg-thdwhite bg-opacity-60 text-primary h-[400px]'>
           <span className='font-bold text-lg'>Step 5. Done</span>
@@ -148,7 +162,7 @@ const Procedure = () => {
           <span className='font-base'>Wait Project to be Approaved</span>
         </div>
       </div>
-    </div>
+    </div>)
   );
 };
 

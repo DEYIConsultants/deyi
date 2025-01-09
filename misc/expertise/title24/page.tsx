@@ -1,12 +1,12 @@
 'use client';
 
-import Image from 'next/image';
+import Image from "next/image";
 import { useRouter } from 'next/navigation';
 
 const Title = () => {
   const router = useRouter();
   return (
-    <div className='flex flex-col'>
+    (<div className='flex flex-col'>
       <div className='w-full flex flex-row md:flex-row h-auto mt-16 bottom-6'>
         <div className='w-full flex flex-col'>
           <div className='w-full flex flex-col items-center justify-center p-4'>
@@ -38,36 +38,44 @@ const Title = () => {
               <Image
                 src='/images/pic14.jpg'
                 alt='Residential Structural Design'
-                objectFit='cover'
                 width={600}
                 height={400}
                 className='z-10 border-2 border-zinc-400 shadow-2xl'
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                  objectFit: "cover"
+                }} />
             </div>
             <div className='bg-white m-2 p-3'>
               <Image
                 src='/images/residential.jpg'
                 alt='Residential Structural Design'
-                objectFit='cover'
                 width={600}
                 height={400}
                 className='z-10 border-2 border-zinc-400 shadow-2xl'
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                  objectFit: "cover"
+                }} />
             </div>
             <div className='bg-white m-2 p-3'>
               <Image
                 src='/images/pic8.jpg'
                 alt='Residential Structural Design'
-                objectFit='cover'
                 width={600}
                 height={400}
                 className='z-10 border-2 border-zinc-400 shadow-2xl'
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                  objectFit: "cover"
+                }} />
             </div>
           </div>
         </div>
       </div>
-
       <div className='flex flex-col items-center justify-center p-14 bg-gray-200'>
         <h3 className='text-sm font-sans md:text-sm font-semibold text-center text-primary mb-4'>
           Work with our Title 24 experts to ensure your building projects meet
@@ -83,7 +91,7 @@ const Title = () => {
           CONTACT US
         </button>
       </div>
-    </div>
+    </div>)
   );
 };
 

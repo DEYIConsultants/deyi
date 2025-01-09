@@ -1,12 +1,12 @@
 'use client';
 
-import Image from 'next/image';
+import Image from "next/image";
 import { useRouter } from 'next/navigation';
 
 const Landscape = () => {
   const router = useRouter();
   return (
-    <div className='flex flex-col'>
+    (<div className='flex flex-col'>
       <div className='h-full flex flex-row'>
         <div className='w-1/3 bg-primary text-white flex items-center justify-center mt-16'>
           <h1 className='text-4xl font-bold p-4 text-center'>
@@ -18,11 +18,14 @@ const Landscape = () => {
             <Image
               src='/images/pic20.jpg'
               alt='Residential Structural Design'
-              layout='responsive'
               width={600}
               height={400}
               className='w-full border-2 border-zinc-400 rounded-lg shadow-lg'
-            />
+              sizes="100vw"
+              style={{
+                width: "100%",
+                height: "auto"
+              }} />
           </div>
           <div className='mt-8 mb-8 text-justify'>
             <h2 className='text-base leading-relaxed text-destructive'>
@@ -65,7 +68,7 @@ const Landscape = () => {
           CONTACT US
         </button>
       </div>
-    </div>
+    </div>)
   );
 };
 

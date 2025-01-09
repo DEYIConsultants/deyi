@@ -1,12 +1,12 @@
 'use client';
 
-import Image from 'next/image';
+import Image from "next/image";
 import { useRouter } from 'next/navigation';
 
 const Structuraldesign = () => {
   const router = useRouter();
   return (
-    <div className='h-auto flex flex-col justify-center items-start overflow-hidden p-4 md:p-8'>
+    (<div className='h-auto flex flex-col justify-center items-start overflow-hidden p-4 md:p-8'>
       <h2 className='flex flex-col items-start mt-16 md:mt-32 mb-6 mx-4 md:mx-14 text-destructive'>
         At DEYI Consultants, we offer comprehensive structural design services
         for both residential and commercial projects. With over a decade of
@@ -56,11 +56,14 @@ const Structuraldesign = () => {
             <Image
               src='/images/pic10.JPG'
               alt='Residential Structural Design'
-              objectFit='cover'
               width={600}
               height={400}
               className='z-10 border-2 border-zinc-400 rounded-lg'
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto",
+                objectFit: "cover"
+              }} />
           </div>
         </div>
       </div>
@@ -107,11 +110,14 @@ const Structuraldesign = () => {
             <Image
               src='/images/pic7.JPG'
               alt='Commercial Structural Design'
-              objectFit='cover'
               width={600}
               height={400}
               className='z-10 border-2 border-zinc-400 rounded-lg'
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto",
+                objectFit: "cover"
+              }} />
           </div>
         </div>
         <h2 className='flex flex-col items-start mt-4 md:mt-8 mb-6 text-destructive'>
@@ -137,7 +143,7 @@ const Structuraldesign = () => {
           </button>
         </div>
       </div>
-    </div>
+    </div>)
   );
 };
 

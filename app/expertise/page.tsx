@@ -1,12 +1,12 @@
 'use client';
 
-import Image from 'next/image';
+import Image from "next/image";
 import { useRouter } from 'next/navigation';
 
 const Structuraldesign = () => {
   const router = useRouter();
   return (
-    <div className='h-auto flex flex-col justify-center items-start overflow-hidden p-4 md:p-8 '>
+    (<div className='h-auto flex flex-col justify-center items-start overflow-hidden p-4 md:p-8 '>
       <div className='flex flex-col items-start mt-32 md:mt-32 mb-6 mx-4 md:mx-14 text-primary gap-4'>
         <h1 className='font-bold text-3xl mb-4 text-primary'>
           SERVICE AREA WE SPECIALIZE
@@ -80,15 +80,18 @@ const Structuraldesign = () => {
             <Image
               src='/images/pic10.JPG'
               alt='Residential Structural Design'
-              objectFit='cover'
               width={600}
               height={400}
               className='z-10 border-2 border-zinc-400 rounded-lg'
-            />
+              sizes="100vw"
+              style={{
+                objectFit: 'cover',
+                width: "100%",
+                height: "auto"
+              }} />
           </div>
         </div>
       </div>
-
       <div className='md:mt-4 mb-10 mx-4 md:mx-14 text-destructive'>
         <h1 className='w-full p-1 indent-4 bg-primary text-white text-2xl my-4 mt-8'>
           Post-Fire Structural Evaluation
@@ -170,16 +173,19 @@ const Structuraldesign = () => {
           <div className='flex justify-center md:w-1/2 md:pl-6'>
             <Image
               src='/images/pic35.JPG'
-              alt='post-fire restoration'
-              objectFit='cover'
+              alt='Post-fire structural design'
               width={600}
               height={400}
               className='z-10 border-2 border-zinc-400 rounded-lg'
-            />
+              sizes="100vw"
+              style={{
+                objectFit: 'cover',
+                width: "100%",
+                height: "auto"
+              }} />
           </div>
         </div>
       </div>
-
       <div className='md:mt-4 mb-10 mx-4 md:mx-14 text-destructive'>
         <h1 className='w-full p-1 indent-4 bg-primary text-white my-4 text-2xl'>
           Construction Administration
@@ -229,11 +235,15 @@ const Structuraldesign = () => {
             <Image
               src='/images/pic7.JPG'
               alt='Commercial Structural Design'
-              objectFit='cover'
               width={600}
               height={400}
               className='z-10 border-2 border-zinc-400 rounded-lg'
-            />
+              sizes="100vw"
+              style={{
+                objectFit: 'cover',
+                width: "100%",
+                height: "auto"
+              }} />
           </div>
         </div>
         <h2 className='flex flex-col items-start mt-4 md:mt-8 mb-6 text-destructive'>
@@ -259,7 +269,7 @@ const Structuraldesign = () => {
           </button>
         </div>
       </div>
-    </div>
+    </div>)
   );
 };
 

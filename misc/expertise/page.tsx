@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
+import Image from "next/image";
 import { useRouter } from 'next/navigation';
 import {
   Button,
@@ -16,7 +16,7 @@ import {
 const Expertise: React.FC = () => {
   const router = useRouter();
   return (
-    <div className='h-auto flex flex-col justify-center items-start overflow-hidden p-4 md:p-8'>
+    (<div className='h-auto flex flex-col justify-center items-start overflow-hidden p-4 md:p-8'>
       <div className='flex flex-col items-start mt-32 mb-10 mx-10 text-primary gap-4'>
         <h1 className='font-bold text-3xl mb-4 text-primary'>
           SERVICE AREA WE SPECIALIZE
@@ -41,7 +41,6 @@ const Expertise: React.FC = () => {
           to delivering quality and compliance in every project we undertake.
         </h2>
       </div>
-
       <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
         <Card
           onClick={() => router.push('/expertise/design')}
@@ -53,8 +52,11 @@ const Expertise: React.FC = () => {
                 src='/images/pic1.JPG'
                 alt='Expertise'
                 fill
-                style={{ objectFit: 'cover' }}
-              />
+                style={{
+                  objectFit: 'cover',
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             </CardMedia>
             <CardContent
               className='flex flex-col bottom-0 left-0 right-0 p-4 bg-opacity-70 bg-gray-500 text-white'
@@ -97,8 +99,11 @@ const Expertise: React.FC = () => {
                 src='/images/iStock-104294966.jpg'
                 alt='Expertise'
                 fill
-                style={{ objectFit: 'cover' }}
-              />
+                style={{
+                  objectFit: 'cover',
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             </CardMedia>
             <CardContent
               className='flex flex-col bottom-0 left-0 right-0 p-4 bg-opacity-70 bg-gray-500 text-white'
@@ -137,8 +142,11 @@ const Expertise: React.FC = () => {
                 src='/images/pic4.JPG'
                 alt='Expertise'
                 fill
-                style={{ objectFit: 'cover' }}
-              />
+                style={{
+                  objectFit: 'cover',
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             </CardMedia>
             <CardContent
               className='flex flex-col bottom-0 left-0 right-0 p-4 bg-opacity-70 bg-gray-500 text-white'
@@ -178,8 +186,11 @@ const Expertise: React.FC = () => {
                 src='/images/pic11.JPG'
                 alt='Expertise'
                 fill
-                style={{ objectFit: 'cover' }}
-              />
+                style={{
+                  objectFit: 'cover',
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             </CardMedia>
             <CardContent
               className='flex flex-col bottom-0 left-0 right-0 p-4 bg-opacity-70 bg-gray-500 text-white'
@@ -219,8 +230,11 @@ const Expertise: React.FC = () => {
                 src='/images/pic16.JPG'
                 alt='Expertise'
                 fill
-                style={{ objectFit: 'cover' }}
-              />
+                style={{
+                  objectFit: 'cover',
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             </CardMedia>
             <CardContent
               className='flex flex-col bottom-0 left-0 right-0 p-4 bg-opacity-70 bg-gray-500 text-white'
@@ -259,8 +273,11 @@ const Expertise: React.FC = () => {
                 src='/images/pic22.jpg'
                 alt='Expertise'
                 fill
-                style={{ objectFit: 'cover' }}
-              />
+                style={{
+                  objectFit: 'cover',
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             </CardMedia>
             <CardContent
               className='flex flex-col bottom-0 left-0 right-0 p-4 bg-opacity-70 bg-gray-500 text-white'
@@ -289,7 +306,7 @@ const Expertise: React.FC = () => {
           </CardActions>
         </Card>
       </div>
-    </div>
+    </div>)
   );
 };
 

@@ -1,12 +1,12 @@
 'use client';
 
-import Image from 'next/image';
+import Image from "next/image";
 import { useRouter } from 'next/navigation';
 
 const Administration = () => {
   const router = useRouter();
   return (
-    <div className='flex flex-col'>
+    (<div className='flex flex-col'>
       <div className='h-screen flex flex-row'>
         <div className='flex flex-col w-2/3 text-primary items-center justify-center'>
           <h1 className='text-4xl font-bold p-4 text-center'>
@@ -42,21 +42,27 @@ const Administration = () => {
               <Image
                 src='/images/pic17.jpg'
                 alt='Residential Structural Design'
-                layout='responsive'
                 width={600}
                 height={400}
                 className='w-full border-2 border-zinc-400 rounded-lg shadow-lg '
-              />
+                sizes="100vw"
+                style={{
+                  width: "100%",
+                  height: "auto"
+                }} />
             </div>
             <div className='w-full my-8'>
               <Image
                 src='/images/pic15.jpg'
                 alt='Residential Structural Design'
-                layout='responsive'
                 width={600}
                 height={400}
                 className='w-full border-2 border-zinc-400 rounded-lg shadow-lg'
-              />
+                sizes="100vw"
+                style={{
+                  width: "100%",
+                  height: "auto"
+                }} />
             </div>
           </div>
         </div>
@@ -77,7 +83,7 @@ const Administration = () => {
           CONTACT US
         </button>
       </div>
-    </div>
+    </div>)
   );
 };
 
