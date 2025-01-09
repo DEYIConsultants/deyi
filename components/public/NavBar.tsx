@@ -7,7 +7,7 @@ import {
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu';
 import Link from 'next/link';
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { Menu, X } from 'react-feather';
 import { useState } from 'react';
 
@@ -19,7 +19,7 @@ export default function NavBar() {
   };
 
   return (
-    <header className='fixed top-0 w-full bg-white shadow-md z-50 flex justify-between items-center px-6 py-1'>
+    (<header className='fixed top-0 w-full bg-white shadow-md z-50 flex justify-between items-center px-6 py-1'>
       <Link href='/'>
         <Image
           src='/images/logo.png'
@@ -27,9 +27,11 @@ export default function NavBar() {
           width={220}
           height={220}
           className='ml-6 flex-shrink-0'
-        />
+          style={{
+            maxWidth: "100%",
+            height: "auto"
+          }} />
       </Link>
-
       <div className='sm:hidden'>
         <button
           onClick={toggleMenu}
@@ -38,7 +40,6 @@ export default function NavBar() {
           {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
-
       <div className='hidden sm:block'>
         <NavigationMenu>
           <NavigationMenuList className='text-midnight-blue'>
@@ -90,7 +91,6 @@ export default function NavBar() {
           </NavigationMenuList>
         </NavigationMenu>
       </div>
-
       {isMenuOpen && (
         <NavigationMenu className='sm:hidden absolute top-full right-0 w-full bg-white shadow-md'>
           <NavigationMenuList className='flex flex-col text-midnight-blue'>
@@ -147,6 +147,6 @@ export default function NavBar() {
           </NavigationMenuList>
         </NavigationMenu>
       )}
-    </header>
+    </header>)
   );
 }
