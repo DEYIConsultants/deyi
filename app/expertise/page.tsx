@@ -80,7 +80,8 @@ const Structuraldesign = () => {
             <Image
               src='/images/pic10.JPG'
               alt='Residential Structural Design'
-              objectFit='cover'
+              style={{ objectFit: 'cover' }}
+              layout='responsive'
               width={600}
               height={400}
               className='z-10 border-2 border-zinc-400 rounded-lg'
@@ -170,8 +171,9 @@ const Structuraldesign = () => {
           <div className='flex justify-center md:w-1/2 md:pl-6'>
             <Image
               src='/images/pic35.JPG'
-              alt='post-fire restoration'
-              objectFit='cover'
+              alt='Post-fire structural design'
+              style={{ objectFit: 'cover' }}
+              layout='responsive'
               width={600}
               height={400}
               className='z-10 border-2 border-zinc-400 rounded-lg'
@@ -229,7 +231,8 @@ const Structuraldesign = () => {
             <Image
               src='/images/pic7.JPG'
               alt='Commercial Structural Design'
-              objectFit='cover'
+              style={{ objectFit: 'cover' }}
+              layout='responsive'
               width={600}
               height={400}
               className='z-10 border-2 border-zinc-400 rounded-lg'
