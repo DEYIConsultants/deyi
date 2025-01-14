@@ -173,7 +173,7 @@ const Structuraldesign = () => {
           </div>
           <div className='flex justify-center md:w-1/2 md:pl-6'>
             <Image
-              src='/images/pic7.JPG'
+              src='/images/pic14.JPG'
               alt='Post-fire structural design'
               width={600}
               height={400}
