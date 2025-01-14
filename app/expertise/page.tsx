@@ -1,12 +1,12 @@
 'use client';
 
-import Image from "next/image";
+import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 
 const Structuraldesign = () => {
   const router = useRouter();
   return (
-    (<div className='h-auto flex flex-col justify-center items-start overflow-hidden p-4 md:p-8 '>
+    <div className='h-auto flex flex-col justify-center items-start overflow-hidden p-4 md:p-8 '>
       <div className='flex flex-col items-start mt-32 md:mt-32 mb-6 mx-4 md:mx-14 text-primary gap-4'>
         <h1 className='font-bold text-3xl mb-4 text-primary'>
           SERVICE AREA WE SPECIALIZE
@@ -83,12 +83,13 @@ const Structuraldesign = () => {
               width={600}
               height={400}
               className='z-10 border-2 border-zinc-400 rounded-lg'
-              sizes="100vw"
+              sizes='100vw'
               style={{
                 objectFit: 'cover',
-                width: "100%",
-                height: "auto"
-              }} />
+                width: '100%',
+                height: 'auto',
+              }}
+            />
           </div>
         </div>
       </div>
@@ -172,17 +173,18 @@ const Structuraldesign = () => {
           </div>
           <div className='flex justify-center md:w-1/2 md:pl-6'>
             <Image
-              src='/images/pic35.JPG'
+              src='/images/pic36.JPG'
               alt='Post-fire structural design'
               width={600}
               height={400}
               className='z-10 border-2 border-zinc-400 rounded-lg'
-              sizes="100vw"
+              sizes='100vw'
               style={{
                 objectFit: 'cover',
-                width: "100%",
-                height: "auto"
-              }} />
+                width: '100%',
+                height: 'auto',
+              }}
+            />
           </div>
         </div>
       </div>
@@ -238,12 +240,13 @@ const Structuraldesign = () => {
               width={600}
               height={400}
               className='z-10 border-2 border-zinc-400 rounded-lg'
-              sizes="100vw"
+              sizes='100vw'
               style={{
                 objectFit: 'cover',
-                width: "100%",
-                height: "auto"
-              }} />
+                width: '100%',
+                height: 'auto',
+              }}
+            />
           </div>
         </div>
         <h2 className='flex flex-col items-start mt-4 md:mt-8 mb-6 text-destructive'>
@@ -269,7 +272,7 @@ const Structuraldesign = () => {
           </button>
         </div>
       </div>
-    </div>)
+    </div>
   );
 };
 
