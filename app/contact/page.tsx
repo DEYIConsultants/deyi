@@ -11,7 +11,7 @@ import {
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import Image from "next/image";
+import Image from 'next/image';
 import homeImage from '@/public/images/homeImage.jpg';
 
 export default function Contact() {
@@ -62,7 +62,7 @@ export default function Contact() {
   };
 
   return (
-    (<div className='relative flex flex-col lg:flex-row justify-center items-center min-h-screen w-full'>
+    <div className='relative flex flex-col lg:flex-row justify-center items-center min-h-screen w-full'>
       {/* Background Image */}
       <div className='absolute inset-0 z-0'>
         <Image
@@ -72,9 +72,10 @@ export default function Contact() {
           className='opacity-10'
           style={{
             objectFit: 'cover',
-            maxWidth: "100%",
-            height: "auto"
-          }} />
+            // maxWidth: "100%",
+            // height: "auto"
+          }}
+        />
       </div>
       {/* Cards Container */}
       <div className='flex flex-col mt-20 lg:flex-row lg:space-x-8 w-full lg:max-w-6xl z-10 h-auto mx-auto p-4 lg:p-8'>
@@ -193,6 +194,6 @@ export default function Contact() {
           </Card>
         </div>
       </div>
-    </div>)
+    </div>
   );
 }

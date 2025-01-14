@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import Image from "next/image";
+import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import Button from '@mui/material/Button';
 import PhoneIcon from '@/public/icons/phone.png';
@@ -15,7 +15,7 @@ const Procedure = () => {
   const router = useRouter();
 
   return (
-    (<div className='h-auto flex flex-col overflow-hidden p-4 md:p-8'>
+    <div className='h-auto flex flex-col overflow-hidden p-4 md:p-8'>
       <div className='flex flex-col items-start mt-32 mb-10 mx-10 text-primary gap-4'>
         <h1 className='font-bold text-3xl mb-4 text-primary'>
           THE REASON YOU WILL CHOOSE US
@@ -46,11 +46,12 @@ const Procedure = () => {
             width={600}
             height={400}
             className='w-full border-2 border-zinc-400 rounded-lg shadow-lg'
-            sizes="100vw"
+            sizes='100vw'
             style={{
-              width: "100%",
-              height: "auto"
-            }} />
+              width: '100%',
+              height: 'auto',
+            }}
+          />
         </div>
         <div className='w-full sm:w-1/2 flex flex-col justify-center items-center bg-slate-200 bg-opacity-60 text-primary h-[400px] p-6'>
           <span className='font-bold text-lg mb-2'>
@@ -61,7 +62,7 @@ const Procedure = () => {
           </span>
 
           <Button
-            onClick={() => router.push('/appoitment')}
+            onClick={() => router.push('/appointment')}
             className='buttonAppointment bg-primary text-white hover:bg-primary-foreground font-base z-50 '
           >
             <Image
@@ -73,9 +74,10 @@ const Procedure = () => {
               // filter invert
               className='mr-2 '
               style={{
-                maxWidth: "100%",
-                height: "auto"
-              }} />
+                maxWidth: '100%',
+                height: 'auto',
+              }}
+            />
             <span className='underline'>Click Here to Schedule!</span>
           </Button>
         </div>
@@ -93,11 +95,12 @@ const Procedure = () => {
             width={600}
             height={400}
             className='w-full border-2 border-zinc-400 rounded-lg shadow-lg'
-            sizes="100vw"
+            sizes='100vw'
             style={{
-              width: "100%",
-              height: "auto"
-            }} />
+              width: '100%',
+              height: 'auto',
+            }}
+          />
         </div>
       </div>
       <div className='flex flex-col sm:flex-row items-center mx-4 sm:mx-14 px-4 sm:px-6 bg-slate-200'>
@@ -108,11 +111,12 @@ const Procedure = () => {
             width={600}
             height={400}
             className='w-full border-2 border-zinc-400 rounded-lg shadow-lg'
-            sizes="100vw"
+            sizes='100vw'
             style={{
-              width: "100%",
-              height: "auto"
-            }} />
+              width: '100%',
+              height: 'auto',
+            }}
+          />
         </div>
         <div className='w-full sm:w-1/2 flex flex-col justify-center items-center bg-thdwhite bg-opacity-60 text-primary h-[400px]'>
           <span className='font-bold text-lg'>Step 3. Submission</span>
@@ -135,11 +139,12 @@ const Procedure = () => {
             width={600}
             height={400}
             className='w-full border-2 border-zinc-400 rounded-lg shadow-lg'
-            sizes="100vw"
+            sizes='100vw'
             style={{
-              width: "100%",
-              height: "auto"
-            }} />
+              width: '100%',
+              height: 'auto',
+            }}
+          />
         </div>
       </div>
       <div className='flex flex-col sm:flex-row items-center mx-4 sm:mx-14 px-4 sm:px-6 bg-slate-200'>
@@ -150,11 +155,12 @@ const Procedure = () => {
             width={600}
             height={400}
             className='w-full border-2 border-zinc-400 rounded-lg shadow-lg'
-            sizes="100vw"
+            sizes='100vw'
             style={{
-              width: "100%",
-              height: "auto"
-            }} />
+              width: '100%',
+              height: 'auto',
+            }}
+          />
         </div>
         <div className='w-full sm:w-1/2 flex flex-col justify-center items-center bg-thdwhite bg-opacity-60 text-primary h-[400px]'>
           <span className='font-bold text-lg'>Step 5. Done</span>
@@ -162,7 +168,7 @@ const Procedure = () => {
           <span className='font-base'>Wait Project to be Approaved</span>
         </div>
       </div>
-    </div>)
+    </div>
   );
 };
 

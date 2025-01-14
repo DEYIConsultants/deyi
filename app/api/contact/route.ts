@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from 'next/server';
+import { NextRequest } from 'next/server';
 import nodemailer from 'nodemailer';
 import dotenv from 'dotenv';
 
@@ -10,13 +10,14 @@ interface ContactFormData {
   message: string;
 }
 
-export async function POST(request: NextRequest, response: NextResponse) {
+export async function POST(request: NextRequest) {
   try {
+    // Validate content type
     if (!request.headers.get('content-type')?.includes('application/json')) {
-      return NextResponse.json(
-        { message: 'Invalid content type' },
-        { status: 400 }
-      );
+      return new Response(JSON.stringify({ message: 'Invalid content type' }), {
+        status: 400,
+        headers: { 'Content-Type': 'application/json' },
+      });
     }
 
     const requestBody = await request.json();
@@ -30,6 +31,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
       throw new Error('Missing required environment variables');
     }
 
+    // Configure nodemailer
     const transporter = nodemailer.createTransport({
       host: 'smtp.gmail.com',
       port: 465,
@@ -49,30 +51,22 @@ export async function POST(request: NextRequest, response: NextResponse) {
 
     await transporter.sendMail(mailOptions);
 
-    // return NextResponse.json(
-    //   { message: 'Email sent successfully' },
-    //   { status: 200 }
-    // );
-
+    // Return success response
     return new Response(
       JSON.stringify({ message: 'Email sent successfully' }),
       {
         status: 200,
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
       }
     );
-  } catch (error) {
+  } catch (error: any) {
     console.error('Error parsing JSON or sending email:', error);
 
     return new Response(
-      JSON.stringify({ message: 'Error sending email: ', error }),
+      JSON.stringify({ message: 'Error sending email', error: error.message }),
       {
         status: 500,
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
       }
     );
   }

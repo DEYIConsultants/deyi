@@ -7,7 +7,7 @@ import {
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu';
 import Link from 'next/link';
-import Image from "next/image";
+import Image from 'next/image';
 import { Menu, X } from 'react-feather';
 import { useState } from 'react';
 
@@ -19,7 +19,7 @@ export default function NavBar() {
   };
 
   return (
-    (<header className='fixed top-0 w-full bg-white shadow-md z-50 flex justify-between items-center px-6 py-1'>
+    <header className='fixed top-0 w-full bg-white shadow-md z-50 flex justify-between items-center px-6 py-1'>
       <Link href='/'>
         <Image
           src='/images/logo.png'
@@ -28,9 +28,10 @@ export default function NavBar() {
           height={220}
           className='ml-6 flex-shrink-0'
           style={{
-            maxWidth: "100%",
-            height: "auto"
-          }} />
+            maxWidth: '100%',
+            height: 'auto',
+          }}
+        />
       </Link>
       <div className='sm:hidden'>
         <button
@@ -80,11 +81,11 @@ export default function NavBar() {
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href='/appoitment' legacyBehavior passHref>
+              <Link href='/appointment' legacyBehavior passHref>
                 <NavigationMenuLink
                   className={`${navigationMenuTriggerStyle()} font-bold bg-primary text-white px-3 py-2 rounded hover:bg-primary/70`}
                 >
-                  SCHEDULE SITE VISIT
+                  FREE CONSULTANT
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
@@ -135,18 +136,18 @@ export default function NavBar() {
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href='/appoitment' legacyBehavior passHref>
+              <Link href='/appointment' legacyBehavior passHref>
                 <NavigationMenuLink
                   className={`${navigationMenuTriggerStyle()} font-bold py-2 px-4`}
                   onClick={toggleMenu}
                 >
-                  SCHEDULE SITE VISIT
+                  FREE CONSULTANT
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
       )}
-    </header>)
+    </header>
   );
 }
