@@ -52,7 +52,7 @@ export default function Home() {
               Explore Our Service
             </Button>
             <Button
-              onClick={() => router.push('/appoitment')}
+              onClick={() => router.push('/appointment')}
               className='buttonAppointment bg-midnight-blue text-white hover:bg-primary-foreground font-base'
             >
               <Image

@@ -37,7 +37,7 @@ export default function Footer() {
                 Contact
               </span>
             </Link>
-            <Link href='/appoitment' legacyBehavior passHref>
+            <Link href='/appointment' legacyBehavior passHref>
               <span className='text-midnight-blue cursor-pointer text-xs'>
                 Free Consultant
               </span>
