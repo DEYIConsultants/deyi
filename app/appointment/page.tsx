@@ -3,7 +3,7 @@
 import { useCalendlyEventListener, InlineWidget } from 'react-calendly';
 
 export default function Appointment() {
-  const URL = process.env.NEXT_PUBLIC_APPOINTMENT_URL;
+  const URL = process.env.NEXT_PUBLIC_APPOITMENT_URL;
 
   useCalendlyEventListener({
     onProfilePageViewed: () => console.log('onProfilePageViewed'),
