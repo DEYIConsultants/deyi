@@ -39,7 +39,7 @@ export default function Footer() {
             </Link>
             <Link href='/appoitment' legacyBehavior passHref>
               <span className='text-midnight-blue cursor-pointer text-xs'>
-                Schedule Appoitment
+                Free Consultant
               </span>
             </Link>
           </CardContent>
