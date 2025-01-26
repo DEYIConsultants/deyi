@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import NavBar from '@/components/public/NavBar';
 import Footer from '@/components/public/Footer';
+import Chatbot from '@/components/public/Chatbot';
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -24,6 +25,7 @@ export default function RootLayout({
           <AppRouterCacheProvider>
             <NavBar />
             {children}
+            <Chatbot />
             <Footer />
           </AppRouterCacheProvider>
         </>

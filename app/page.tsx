@@ -32,7 +32,6 @@ export default function Home() {
           <h2 className='overlay-texth2 my-4 text-lg md:text-2xl text-center'>
             Devoting Ourselves to Ensure Your Project Stands Strong And Secure
           </h2>
-
           <div className='mt-10 md:mt-20 space-y-4 md:space-y-0 md:space-x-8 flex flex-col md:flex-row'>
             <Button
               onClick={() => router.push('/expertise')}
@@ -71,6 +70,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       <style jsx>{`
         .overlay-texth1 {
           color: rgba(25, 25, 112, 1);
