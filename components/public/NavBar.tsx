@@ -1,153 +1,23 @@
 'use client';
-import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  navigationMenuTriggerStyle,
-} from '@/components/ui/navigation-menu';
-import Link from 'next/link';
+
 import Image from 'next/image';
-import { Menu, X } from 'react-feather';
-import { useState } from 'react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { useEffect, useRef, useState } from 'react';
+import { ArrowUpRight, Menu, X } from 'lucide-react';
+
+const links = [{ href: '/expertise', label: 'Services' }, { href: '/about', label: 'About Us' }, { href: '/procedure', label: 'Our Process' }, { href: '/contact', label: 'Contact' }];
 
 export default function NavBar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+  const toggleRef = useRef<HTMLButtonElement>(null);
+  useEffect(() => { setOpen(false); }, [pathname]);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  return (
-    <header className='fixed top-0 w-full bg-white shadow-md z-50 flex justify-between items-center px-6 py-1'>
-      <Link href='/'>
-        <Image
-          src='/images/logo.png'
-          alt='DEYI Logo'
-          width={220}
-          height={220}
-          className='ml-6 flex-shrink-0'
-          style={{
-            maxWidth: '100%',
-            height: 'auto',
-          }}
-        />
-      </Link>
-      <div className='sm:hidden'>
-        <button
-          onClick={toggleMenu}
-          className='text-midnight-blue focus:outline-none'
-        >
-          {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
-      </div>
-      <div className='hidden sm:block'>
-        <NavigationMenu>
-          <NavigationMenuList className='text-midnight-blue'>
-            <NavigationMenuItem>
-              <Link href='/about' legacyBehavior passHref>
-                <NavigationMenuLink
-                  className={`${navigationMenuTriggerStyle()} font-bold`}
-                >
-                  ABOUT
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Link href='/expertise' legacyBehavior passHref>
-                <NavigationMenuLink
-                  className={`${navigationMenuTriggerStyle()} font-bold`}
-                >
-                  EXPERTISE
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Link href='/procedure' legacyBehavior passHref>
-                <NavigationMenuLink
-                  className={`${navigationMenuTriggerStyle()} font-bold`}
-                >
-                  PROCEDURE
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Link href='/contact' legacyBehavior passHref>
-                <NavigationMenuLink
-                  className={`${navigationMenuTriggerStyle()} font-bold`}
-                >
-                  CONTACT
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Link href='/appointment' legacyBehavior passHref>
-                <NavigationMenuLink
-                  className={`${navigationMenuTriggerStyle()} font-bold bg-primary text-white px-3 py-2 rounded hover:bg-primary/70`}
-                >
-                  FREE CONSULTANT
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-          </NavigationMenuList>
-        </NavigationMenu>
-      </div>
-      {isMenuOpen && (
-        <NavigationMenu className='sm:hidden absolute top-full right-0 w-full bg-white shadow-md'>
-          <NavigationMenuList className='flex flex-col text-midnight-blue'>
-            <NavigationMenuItem>
-              <Link href='/about' legacyBehavior passHref>
-                <NavigationMenuLink
-                  className={`${navigationMenuTriggerStyle()} font-bold py-2 px-4`}
-                  onClick={toggleMenu}
-                >
-                  ABOUT
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Link href='/expertise' legacyBehavior passHref>
-                <NavigationMenuLink
-                  className={`${navigationMenuTriggerStyle()} font-bold py-2 px-4`}
-                  onClick={toggleMenu}
-                >
-                  EXPERTISE
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Link href='/procedure' legacyBehavior passHref>
-                <NavigationMenuLink
-                  className={`${navigationMenuTriggerStyle()} font-bold py-2 px-4`}
-                  onClick={toggleMenu}
-                >
-                  PROCEDURE
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Link href='/contact' legacyBehavior passHref>
-                <NavigationMenuLink
-                  className={`${navigationMenuTriggerStyle()} font-bold py-2 px-4`}
-                  onClick={toggleMenu}
-                >
-                  CONTACT
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Link href='/appointment' legacyBehavior passHref>
-                <NavigationMenuLink
-                  className={`${navigationMenuTriggerStyle()} font-bold py-2 px-4`}
-                  onClick={toggleMenu}
-                >
-                  FREE CONSULTANT
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-          </NavigationMenuList>
-        </NavigationMenu>
-      )}
-    </header>
-  );
+  return <header className="site-header" onKeyDown={event => { if (event.key === 'Escape') { setOpen(false); toggleRef.current?.focus(); } }}>
+    <div className="site-container header-inner"><Link href="/" className="brand" aria-label="DEYI Consultants home" onClick={() => setOpen(false)}><Image src="/images/logo.png" alt="DEYI Consultants" width={220} height={58} priority /></Link>
+      <button className="menu-toggle" ref={toggleRef} onClick={() => setOpen(!open)} aria-label={open ? 'Close navigation' : 'Open navigation'} aria-expanded={open} aria-controls="main-navigation">{open ? <X /> : <Menu />}</button>
+      <nav id="main-navigation" aria-label="Main navigation" className={`main-navigation ${open ? 'is-open' : ''}`}>{links.map(link => <Link key={link.href} href={link.href} aria-current={pathname === link.href ? 'page' : undefined} onClick={() => setOpen(false)}>{link.label}</Link>)}<Link href="/appointment" className="nav-cta" aria-current={pathname === '/appointment' ? 'page' : undefined} onClick={() => setOpen(false)}>Free Consultation <ArrowUpRight size={16} aria-hidden="true" /></Link></nav>
+    </div>
+  </header>;
 }

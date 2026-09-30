@@ -1,53 +1,7 @@
-import React from 'react';
 import Link from 'next/link';
-import {
-  Card,
-  CardHeader,
-  CardContent,
-  CardFooter,
-  CardTitle,
-} from '@/components/ui/card';
+import { ArrowUpRight } from 'lucide-react';
+import { company } from '@/lib/site';
 
 export default function Footer() {
-  return (
-    <footer className='w-full bg-white shadow-none z-50 my-6'>
-      <div className='container mx-auto'>
-        <Card className='bg-white shadow-none text-midnight-blue text-sm'>
-          <CardHeader className='text-center py-1'>
-            <CardTitle className='font-bold text-xs'>Quick Links</CardTitle>
-          </CardHeader>
-          <CardContent className='flex flex-row items-center justify-center space-x-6 py-2'>
-            <Link href='/about' legacyBehavior passHref>
-              <span className='text-midnight-blue cursor-pointer text-xs'>
-                About
-              </span>
-            </Link>
-            <Link href='/expertise' legacyBehavior passHref>
-              <span className='text-midnight-blue cursor-pointer text-xs'>
-                Expertise
-              </span>
-            </Link>
-            <Link href='/procedure' legacyBehavior passHref>
-              <span className='text-midnight-blue cursor-pointer text-xs'>
-                Procedure
-              </span>
-            </Link>
-            <Link href='/contact' legacyBehavior passHref>
-              <span className='text-midnight-blue cursor-pointer text-xs'>
-                Contact
-              </span>
-            </Link>
-            <Link href='/appointment' legacyBehavior passHref>
-              <span className='text-midnight-blue cursor-pointer text-xs'>
-                Free Consultant
-              </span>
-            </Link>
-          </CardContent>
-          <CardFooter className='justify-center text-gray-500 py-1 text-xs'>
-            ©2016 - 2024 DEYI Consultants. All rights reserved.
-          </CardFooter>
-        </Card>
-      </div>
-    </footer>
-  );
+  return <footer className="site-footer"><div className="site-container"><div className="footer-grid"><div><Link href="/" className="footer-brand">DEYI<span>CONSULTANTS</span></Link><p>Structural engineering.<br />Practical guidance. Clear next steps.</p><span className="footer-location">Irvine, California · Established 2016</span></div><div><h2>Explore</h2><Link href="/expertise">Structural Services</Link><Link href="/about">About DEYI</Link><Link href="/procedure">Our Process</Link><Link href="/appointment">Free Consultation <ArrowUpRight size={13} aria-hidden="true" /></Link></div><div><h2>Let’s Connect</h2><a href={company.phoneHref}>{company.phone}</a><a href={`mailto:${company.email}`}>{company.email}</a><address>3943 Irvine Blvd #765<br />Irvine, CA 92602</address></div></div><div className="footer-bottom"><span>© {new Date().getFullYear()} DEYI Consultants. All rights reserved.</span><span>Structural engineering & permit application assistance</span></div></div></footer>;
 }
