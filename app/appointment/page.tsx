@@ -4,7 +4,7 @@ import { PageIntro } from '@/components/public/SiteSections';
 import AppointmentBooking from '@/components/public/AppointmentBooking';
 import { company } from '@/lib/site';
 
-export const metadata: Metadata = { title: 'Book A Free Structural Consultation', description: 'Book a free 15–30 minute phone consultation to discuss your structural engineering project and permit application assistance.' };
+export const metadata: Metadata = { alternates: { canonical: '/appointment' }, title: 'Book A Free Structural Consultation', description: 'Book a free 15–30 minute phone consultation to discuss your structural engineering project and permit application assistance.' };
 
 export default function Appointment() {
   const bookingUrl = process.env.NEXT_PUBLIC_APPOINTMENT_URL || process.env.NEXT_PUBLIC_APPOITMENT_URL;

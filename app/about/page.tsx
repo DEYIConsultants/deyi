@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { ContactCTA, PageIntro } from '@/components/public/SiteSections';
 
-export const metadata: Metadata = { title: 'About Our Structural Engineering Practice', description: 'Established in 2016 and based in Irvine, DEYI Consultants provides structural engineering and related project support.' };
+export const metadata: Metadata = { alternates: { canonical: '/about' }, title: 'About Our Structural Engineering Practice', description: 'Established in 2016 and based in Irvine, DEYI Consultants provides structural engineering and related project support.' };
 
 export default function About() {
   return <><PageIntro imageSrc="/images/pic5.JPG" eyebrow="About DEYI" title="A Focused Practice. A Solid Foundation."><p>Structural engineering is what we do. Helping you understand your project’s structural needs is where we begin.</p></PageIntro>

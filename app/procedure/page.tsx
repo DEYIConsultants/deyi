@@ -4,7 +4,7 @@ import { ArrowRight, FileText } from 'lucide-react';
 import { ContactCTA, FAQ, PageIntro } from '@/components/public/SiteSections';
 import { steps } from '@/lib/site';
 
-export const metadata: Metadata = { title: 'Our Process', description: 'From a free consultation and structural engineering proposal to permit application assistance and construction-phase structural support.' };
+export const metadata: Metadata = { alternates: { canonical: '/procedure' }, title: 'Our Process', description: 'From a free consultation and structural engineering proposal to permit application assistance and construction-phase structural support.' };
 
 export default function Procedure() {
   return <><PageIntro imageSrc="/images/pic24.jpg" imagePosition="center 18%" mobileImagePosition="75% top" eyebrow="Our Process" title="Know What Comes Next."><p>From your first question to structural support in the field, we keep the scope and next steps clear.</p></PageIntro>
