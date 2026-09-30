@@ -4,8 +4,14 @@ import Footer from '@/components/public/Footer';
 import Chatbot from '@/components/public/Chatbot';
 import './globals.css';
 
+// Refresh prerendered pages daily so the copyright year advances without a deployment.
+export const revalidate = 86400;
+
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.deyiconsultants.com'),
+  icons: {
+    icon: { url: '/favicon.png', type: 'image/png', sizes: '1069x1069' },
+  },
   title: { default: 'DEYI Consultants | Structural Engineering In Irvine, CA', template: '%s | DEYI Consultants' },
   description: 'Irvine-based structural engineering for residential, commercial, and outdoor structures. Structural evaluations, permit application assistance, and construction support.',
   openGraph: { type: 'website', siteName: 'DEYI Consultants', title: 'DEYI Consultants | Structural Engineering', description: 'Structural engineering, permit application assistance, and construction-phase support. Based in Irvine, California.', images: [{ url: '/images/structural-site.webp', width: 1800, height: 1200, alt: 'Structural construction site' }] },

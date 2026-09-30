@@ -51,6 +51,15 @@ Set these in a local `.env` file or the deployment environment. Never commit cre
 
 The form validates required fields and sends plain-text email with the visitor as the reply-to contact. Delivery failures preserve the visitor’s inputs and show direct contact information. Validate real email delivery separately using an authorized test inquiry before publishing.
 
+## Copyright year
+
+The footer displays `2016–current year` using the server’s UTC year. The root
+layout revalidates prerendered pages every 24 hours, allowing the year to advance
+without a new deployment. On a cached page, the first request after expiry can
+serve the previous version while regeneration happens in the background. The
+copyright span uses `data-nosnippet` to keep boilerplate out of Google search
+snippets after Google recrawls the page.
+
 ## Content and assets
 
 - `lib/site.ts`: company contact details, structural services, process steps, and FAQs.
@@ -58,6 +67,7 @@ The form validates required fields and sends plain-text email with the visitor a
 - `components/public/`: shared navigation, footer, contact options, and forms.
 - `app/globals.css`: responsive visual system.
 - `public/images/structural-site.webp`: optimized derivative of the existing construction photo; the original asset is preserved. The photo is illustrative and is not presented as a verified DEYI case study.
+- `public/favicon.png`: the supplied square DEYI logo, used unchanged as the site favicon through the root layout metadata. Keep its URL stable and publicly crawlable. After deployment, request a homepage recrawl in Search Console; Google determines when and whether the icon appears in search results.
 
 The former incomplete chat integration is replaced with direct contact options. Its old POST endpoints return HTTP 410 and do not call any external AI service.
 
