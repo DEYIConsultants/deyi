@@ -5,7 +5,7 @@ import { PageIntro } from '@/components/public/SiteSections';
 import ContactForm from '@/components/public/ContactForm';
 import { company, services } from '@/lib/site';
 
-export const metadata: Metadata = { title: 'Contact Our Structural Engineering Team', description: 'Contact DEYI Consultants in Irvine to discuss structural engineering, evaluations, permit application assistance, or construction-phase support.' };
+export const metadata: Metadata = { alternates: { canonical: '/contact' }, title: 'Contact Our Structural Engineering Team', description: 'Contact DEYI Consultants in Irvine to discuss structural engineering, evaluations, permit application assistance, or construction-phase support.' };
 
 export default function Contact({ searchParams }: { searchParams: { service?: string } }) {
   const initialService = services.some(service => service.id === searchParams.service) ? searchParams.service : '';

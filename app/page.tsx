@@ -1,8 +1,11 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowDown, ArrowRight, Check } from 'lucide-react';
 import { ContactCTA, FAQ, ServiceCards } from '@/components/public/SiteSections';
 import { steps } from '@/lib/site';
+
+export const metadata: Metadata = { alternates: { canonical: '/' } };
 
 export default function Home() {
   return <>

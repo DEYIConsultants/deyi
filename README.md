@@ -14,6 +14,32 @@ npm test
 npm run build
 ```
 
+## Search indexing
+
+The canonical origin is `https://www.deyiconsultants.com`. Each public page
+declares its own canonical URL; contact query parameters resolve to `/contact`.
+Requests to the apex domain permanently redirect to the same path on `www`,
+preserving query parameters. Keep the Vercel Domains configuration consistent:
+the `www` domain must serve the site and must not redirect back to the apex.
+
+`npm run build` runs `next-sitemap` automatically through the `postbuild` script.
+It discovers prerendered pages from the Next.js build, explicitly includes the
+dynamically rendered `/contact` page, excludes API routes, and generates
+`public/sitemap.xml`, its child sitemap, and `public/robots.txt` using the same
+canonical origin. These generated files are ignored by Git; do not edit them
+manually. Use `npm run build` as the deployment build command (not `next build`
+alone), so sitemap generation also runs. Run it once before inspecting these
+files during local development.
+
+Sitemap entries intentionally omit `lastmod`, `changefreq`, and `priority`.
+Deployment time is not a reliable content modification date. Add `lastmod` only
+when accurate per-page modification dates are available.
+
+After deployment, confirm that the sitemap contains the six public pages and
+submit `https://www.deyiconsultants.com/sitemap.xml` in Google Search Console.
+The existing submitted sitemap address stays unchanged. In URL Inspection,
+check the rendered canonical and request indexing for changed pages if needed.
+
 ## Configuration
 
 Set these in a local `.env` file or the deployment environment. Never commit credentials.

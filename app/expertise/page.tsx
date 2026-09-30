@@ -4,7 +4,7 @@ import { ArrowRight, Check } from 'lucide-react';
 import { ContactCTA, PageIntro } from '@/components/public/SiteSections';
 import { services } from '@/lib/site';
 
-export const metadata: Metadata = { title: 'Structural Engineering Services', description: 'Residential and commercial structural engineering, outdoor structures, structural evaluations, permit application assistance, and construction-phase support.' };
+export const metadata: Metadata = { alternates: { canonical: '/expertise' }, title: 'Structural Engineering Services', description: 'Residential and commercial structural engineering, outdoor structures, structural evaluations, permit application assistance, and construction-phase support.' };
 
 export default function Expertise() {
   return <><PageIntro imageSrc="/images/pic7.JPG" eyebrow="Our Expertise" title="Structural Expertise. Project By Project."><p>Focused engineering services for the structures you build, improve, and maintain. We work with you to define the right scope for your project.</p></PageIntro>
